@@ -1,0 +1,42 @@
+@use '../02-variables/globals' as globals;
+@use '../02-variables/mixins' as mixins;
+@use '../02-variables/palette' as palette;
+
+.warning {
+  position: absolute;
+  bottom: 1rem;
+  left: 2.5vw;
+  width: 50vw;
+  padding: 0 1.5rem;
+  border-radius: 4px;
+  max-width: 530px;
+  max-height: 42px;
+  min-width: 240px;
+  background: palette.$Supporting-1-300;
+  z-index: globals.$z-index-ui;
+  display: flex;
+  font-size: 0.8rem;
+
+  @include mixins.screenQuery('max', 'tablet') {
+    font-size: 9.5px;
+  }
+
+  svg {
+    position: relative;
+    width: 30px;
+    flex-shrink: 0;
+
+    .cls-warning-1 {
+      fill: palette.$Neutral-900;
+    }
+  }
+
+  p {
+    position: relative;
+    left: 0.125rem;
+    color: palette.$Neutral-900;
+    hyphens: manual;
+    padding: 0 0.5rem;
+    font-family: sans-serif;
+  }
+}

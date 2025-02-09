@@ -1,0 +1,252 @@
+{
+  "text": {
+    "header": "brand placeholder",
+    "footer": "© 2025 Your Company Name"
+  },
+  "uiProps": {
+    "appTitle": "App ffTitle",
+    "header": " Logo",
+    "footer": "Company License",
+    "--selected-font": "Open Sans",
+    "--selected-palette": "08",
+    "fontFamilyStr": "\"Open Sans\", sans-serif;",
+    "fontFamilyLink": "Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800",
+    "paletteColorStr": "$Primary-050: #E6F6FF;$Primary-100: #BAE3FF;$Primary-200: #7CC4FA;$Primary-300: #47A3F3;$Primary-400: #2186EB;$Primary-500: #0967D2;$Primary-600: #0552B5;$Primary-700: #03449E;$Primary-800: #01337D;$Primary-900: #002159;$Neutral-050: #F5F7FA;$Neutral-100: #E4E7EB;$Neutral-200: #CBD2D9;$Neutral-300: #9AA5B1;$Neutral-400: #7B8794;$Neutral-500: #616E7C;$Neutral-600: #52606D;$Neutral-700: #3E4C59;$Neutral-800: #323F4B;$Neutral-900: #1F2933;$Supporting-1-050: #E1FCF8;$Supporting-1-100: #C1FEF6;$Supporting-1-200: #92FDF2;$Supporting-1-300: #62F4EB;$Supporting-1-400: #3AE7E1;$Supporting-1-500: #1CD4D4;$Supporting-1-600: #0FB5BA;$Supporting-1-700: #099AA4;$Supporting-1-800: #07818F;$Supporting-1-900: #05606E;$Supporting-2-050: #FFE8D9;$Supporting-2-100: #FFD0B5;$Supporting-2-200: #FFB088;$Supporting-2-300: #FF9466;$Supporting-2-400: #F9703E;$Supporting-2-500: #F35627;$Supporting-2-600: #DE3A11;$Supporting-2-700: #C52707;$Supporting-2-800: #AD1D07;$Supporting-2-900: #841003;$Supporting-3-050: #FFE3E3;$Supporting-3-100: #FFBDBD;$Supporting-3-200: #FF9B9B;$Supporting-3-300: #F86A6A;$Supporting-3-400: #EF4E4E;$Supporting-3-500: #E12D39;$Supporting-3-600: #CF1124;$Supporting-3-700: #AB091E;$Supporting-3-800: #8A041A;$Supporting-3-900: #610316;$Supporting-4-050: #FFFBEA;$Supporting-4-100: #FFF3C4;$Supporting-4-200: #FCE588;$Supporting-4-300: #FADB5F;$Supporting-4-400: #F7C948;$Supporting-4-500: #F0B429;$Supporting-4-600: #DE911D;$Supporting-4-700: #CB6E17;$Supporting-4-800: #B44D12;$Supporting-4-900: #8D2B0B;"
+  },
+  "content": [
+    {
+      "pageId": "home",
+      "isGpt4ImgSearch": true,
+      "imgSearchInput": "spacious reception area with elegant interior design and friendly staff at front desk",
+      "title": "Welcome to Our Professional Space",
+      "desc": "Experience sophistication and warmth in our welcoming reception area. Our team is ready to assist you.",
+      "calloutTitle": "Explore Our Services",
+      "calloutDesc": "Discover how we can help you achieve your goals.",
+      "pageEntityLoc": "office",
+      "isBusiness": true,
+      "pageCategory": "landing",
+      "img": {
+        "id": 4322027,
+        "imgUrl": "imgs/pexels-photo-4322027.jpeg",
+        "type": "investment",
+        "types": [
+          "investment",
+          "work",
+          "stocks",
+          "retirement",
+          "management",
+          "banking",
+          "investments"
+        ],
+        "width": 4000,
+        "height": 6000,
+        "alt": "Facade of a contemporary building with lush greenery in Milan's Bosco Verticale.",
+        "pageCategory": [
+          "landing"
+        ],
+        "pageEntityLoc": [
+          "office",
+          "any",
+          "leisure"
+        ],
+        "url": "https://www.pexels.com/photo/modern-residential-building-facade-decorated-with-green-plants-4322027/",
+        "photographer": "Francesco Ungaro",
+        "photographer_url": "https://www.pexels.com/@francesco-ungaro",
+        "photographer_id": 21273,
+        "avg_color": "#1F3832",
+        "src": {
+          "original": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg",
+          "large2x": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        }
+      }
+    },
+    {
+      "pageId": "services",
+      "cardId": "",
+      "isGpt4ImgSearch": true,
+      "imgSearchInput": "professional team discussing strategies in a bright open office environment with laptops",
+      "title": "Our Range of Services",
+      "desc": "Experience innovation and excellence with our professional team. Unlock your potential with us.",
+      "calloutTitle": "",
+      "calloutDesc": "",
+      "pageEntityLoc": "office",
+      "isBusiness": true,
+      "pageCategory": "any",
+      "img": {
+        "alt": "Firemen Blowing Water on Fire",
+        "id": 280076,
+        "imgUrl": "imgs/pexels-photo-280076.jpeg",
+        "type": "services",
+        "types": [
+          "fire"
+        ],
+        "width": 1920,
+        "height": 1002,
+        "pageCategory": [
+          "any"
+        ],
+        "pageEntityLoc": [
+          "office",
+          "any",
+          "warehouse"
+        ],
+        "url": "https://www.pexels.com/photo/accident-action-adult-blaze-280076/",
+        "photographer": "Pixabay",
+        "photographer_url": "https://www.pexels.com/@pixabay",
+        "photographer_id": 2659,
+        "src": {
+          "original": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg",
+          "large2x": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "score": 1
+      },
+      "content": [
+        {
+          "pageId": "services",
+          "cardId": "design",
+          "title": "Innovative Design Solutions",
+          "desc": "Transform your vision into reality with our cutting-edge design services.",
+          "calloutTitle": "Learn More",
+          "calloutDesc": "Explore how our design expertise can elevate your brand.",
+          "pageEntityLoc": "office",
+          "isBusiness": true,
+          "pageCategory": "any",
+          "img": {
+            "alt": "Inside A Cafe",
+            "id": 2199190,
+            "imgUrl": "imgs/pexels-photo-2199190.jpeg",
+            "type": "services",
+            "types": [
+              "services"
+            ],
+            "width": 3024,
+            "height": 4032,
+            "pageCategory": [
+              "any"
+            ],
+            "pageEntityLoc": [
+              "office",
+              "any"
+            ],
+            "url": "https://www.pexels.com/photo/inside-a-store-2199190/",
+            "photographer": "Dmitry Zvolskiy",
+            "photographer_url": "https://www.pexels.com/@zvolskiy",
+            "photographer_id": 708150,
+            "src": {
+              "original": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg",
+              "large2x": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "score": 2
+          }
+        },
+        {
+          "pageId": "services",
+          "cardId": "digital",
+          "isGpt4ImgSearch": true,
+          "imgSearchInput": "marketing specialist managing social media ads on computer with real-time stats",
+          "title": "Digital Marketing Strategies",
+          "desc": "Boost your online presence and reach your target audience effectively with our digital marketing services.",
+          "calloutTitle": "Get Started",
+          "calloutDesc": "Enhance your digital footprint with us.",
+          "pageEntityLoc": "office",
+          "isBusiness": true,
+          "pageCategory": "any",
+          "img": {
+            "alt": "Close up of phrase 'Work hard Dream big' in white on black glass wall",
+            "id": 3300460,
+            "imgUrl": "imgs/pexels-photo-3300460.jpeg",
+            "type": "services",
+            "types": [
+              "services"
+            ],
+            "width": 3000,
+            "height": 2250,
+            "pageCategory": [
+              "any"
+            ],
+            "pageEntityLoc": [
+              "office",
+              "any"
+            ],
+            "url": "https://www.pexels.com/photo/selective-focus-photography-of-work-hard-dream-big-texts-on-clear-glass-wall-3300460/",
+            "photographer": "Roman Koval",
+            "photographer_url": "https://www.pexels.com/@kovalrk",
+            "photographer_id": 84945,
+            "src": {
+              "original": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg",
+              "large2x": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "score": 2
+          }
+        }
+      ]
+    },
+    {
+      "pageId": "about",
+      "isGpt4ImgSearch": true,
+      "imgSearchInput": "colleagues collaborating in modern meeting room with glass walls and city skyline view",
+      "title": "Our Story",
+      "desc": "Discover our journey towards excellence and our commitment to innovation.",
+      "calloutTitle": "Meet Our Team",
+      "calloutDesc": "Learn about the talented individuals driving our success.",
+      "pageEntityLoc": "aboutmain",
+      "isBusiness": true,
+      "pageCategory": "about",
+      "img": {
+        "alt": "Red  Led Light With Silhouette Of A Man",
+        "id": 3094799,
+        "imgUrl": "imgs/pexels-photo-3094799.jpeg",
+        "type": "abstract",
+        "types": [
+          "abstract"
+        ],
+        "width": 3778,
+        "height": 4722,
+        "pageCategory": [
+          "any"
+        ],
+        "pageEntityLoc": [
+          "any"
+        ],
+        "url": "https://www.pexels.com/photo/red-led-light-with-silhouette-of-a-man-3094799/",
+        "photographer": "Akwice",
+        "photographer_url": "https://www.pexels.com/@akwice-1527735",
+        "photographer_id": 1527735,
+        "src": {
+          "original": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg",
+          "large2x": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        }
+      }
+    }
+  ]
+}

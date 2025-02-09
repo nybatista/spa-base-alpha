@@ -1,0 +1,23 @@
+<div class="page-header">
+  <figure class="bg-image">
+    <img src="{{imgUrl}}" alt="{{alt}}" />
+  </figure>
+
+  <div class="callout">
+    <header>
+      <h1>{{calloutTitle}}</h1>
+      <p>{{calloutDesc}}</p>
+    </header>
+  </div>
+</div>
+
+<div class="page-content default-content">
+  <header>
+    <h2>{{title}}</h2>
+    <p>{{desc}}</p>
+  </header>
+  <p class="tagline">{{text}}</p>
+  {{#placeholderArticle}}
+  <p>{{.*}}</p>
+  {{/placeholderArticle}}
+</div>

@@ -1,0 +1,113 @@
+export const navLinks = [
+  {
+    pageId: 'home',
+    title: 'HOME',
+    href: '',
+    navLevel: 1,
+  },
+  {
+    pageId: 'flying-cars',
+    cardId: '',
+    navLevel: 1,
+    title: 'FLYING CARS',
+    href: '?pageId=flying-cars',
+  },
+  {
+    pageId: 'flying-cars',
+    cardId: 'flying-car-models',
+    title: 'FLYING CAR MODELS',
+    href: '?pageId=flying-cars&cardId=flying-car-models',
+    navLevel: 2,
+  },
+  {
+    pageId: 'flying-cars',
+    cardId: 'flying-tech',
+    title: 'FLYING TECH',
+    href: '?pageId=flying-cars&cardId=flying-tech',
+    navLevel: 2,
+  },
+  {
+    pageId: 'flying-cars',
+    cardId: 'showroom',
+    title: 'SHOWROOM',
+    href: '?pageId=flying-cars&cardId=showroom',
+    navLevel: 2,
+  },
+  {
+    pageId: 'about',
+    cardId: '',
+    navLevel: 1,
+    title: 'ABOUT',
+    href: '?pageId=about',
+  },
+  {
+    pageId: 'about',
+    cardId: 'our-team',
+    title: 'OUR TEAM',
+    href: '?pageId=about&cardId=our-team',
+    navLevel: 2,
+  },
+];
+
+export const payloadHome = {
+  isDeepLink: false,
+  routeCount: 1,
+  pathInnermost: 'pageId',
+  paths: ['pageId'],
+  routeData: {
+    pageId: 'home',
+    eventPreventDefault: 'true',
+    text: 'HOME',
+    endRoute: 'true',
+  },
+  routeValue: '',
+  isHash: false,
+  isHidden: false,
+  isHistory: false,
+  routeType: 'query',
+  pathsAdded: [],
+  pathsRemoved: [],
+  pathsChanged: ['pageId'],
+};
+
+export const payloadAbout = {
+  isDeepLink: false,
+  routeCount: 2,
+  pathInnermost: 'pageId',
+  paths: ['pageId'],
+  routeData: {
+    pageId: 'about',
+    eventPreventDefault: 'true',
+    text: 'ABOUT',
+    endRoute: 'true',
+    cardId: '',
+  },
+  routeValue: '?pageId=about',
+  isHash: false,
+  isHidden: false,
+  isHistory: false,
+  routeType: 'query',
+  pathsAdded: [],
+  pathsRemoved: [],
+  pathsChanged: ['pageId'],
+};
+
+export const payloadCardFlyingTech = {
+  isDeepLink: false,
+  routeCount: 2,
+  pathInnermost: 'cardId',
+  paths: ['pageId', 'cardId'],
+  routeData: {
+    pageId: 'flying-cars',
+    cardId: 'flying-tech',
+    eventPreventDefault: 'true',
+  },
+  routeValue: '?pageId=flying-cars&cardId=flying-tech',
+  isHash: false,
+  isHidden: false,
+  isHistory: false,
+  routeType: 'query',
+  pathsAdded: ['cardId'],
+  pathsRemoved: [],
+  pathsChanged: ['cardId'],
+};

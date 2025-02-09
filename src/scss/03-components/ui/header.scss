@@ -1,0 +1,56 @@
+@use '../../02-variables/palette.scss' as palette;
+
+/* Site Header */
+.site-header,
+#site-header {
+  height: var(--header-height);
+  background-color: palette.$Neutral-050; // var(--header-color);
+  border-bottom: 1px solid palette.$Neutral-200;
+  display: flex;
+  align-items: center;
+
+  .header-content {
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    margin: 0;
+    color: palette.$Neutral-900;
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .site-nav {
+    a {
+      text-decoration: none;
+      color: palette.$Neutral-500;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      &:hover,
+      &.selected {
+        color: palette.$Neutral-900;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .site-nav,
+    .site-title {
+      display: none;
+    }
+  }
+}

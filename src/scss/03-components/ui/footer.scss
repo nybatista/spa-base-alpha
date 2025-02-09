@@ -1,0 +1,21 @@
+@use '../../02-variables/palette.scss' as palette;
+
+/* Site Footer */
+.site-footer,
+#site-footer {
+  height: var(--footer-height);
+  background-color: palette.$Neutral-100;
+  border-top: 1px solid palette.$Neutral-200;
+
+  .footer-content {
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: var(--fg-color);
+  }
+}

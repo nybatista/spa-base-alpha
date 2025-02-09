@@ -1,0 +1,94 @@
+<div class="card-initial-size"></div>
+<div class="card-container">
+  <div class="card-scroll" id="card-scroll-{{cardId}}">
+    <section class="card-material">
+      <button
+        class="back-btn-top"
+        data-channel="ROUTE"
+        data-is-expanded="true"
+        data-event-prevent-default="true"
+        data-page-id="{{pageId}}"
+        data-end-route="true"
+      >
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 333 350"
+          style="enable-background: new 0 0 333 350"
+          xml:space="preserve"
+        >
+          <style type="text/css">
+            .st0 {
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+            }
+          </style>
+          <g>
+            <path
+              class="st0"
+              d="M156,39c8,8,8,20,0,28c-8,7-20,7-28,0c-8-8-8-20,0-28S148,31,156,39z M156,205c8,8,8,20,0,28s-20,8-28,0
+		s-8-20,0-28S148,197,156,205z M156,94c8,8,8,20,0,28s-20,8-28,0s-8-20,0-28C136,87,148,87,156,94z M319,171c-7,7-20,7-28,0
+		c-7-8-7-21,0-28c8-8,21-8,28,0C327,150,327,163,319,171z M264,173c-8,7-20,7-28,0c-8-8-8-21,0-28c8-8,20-8,28,0
+		C271,152,271,165,264,173z M208,175c-7,7-20,7-28,0c-7-8-7-21,0-28c8-8,21-8,28,0C216,154,216,167,208,175z M153,177
+		c-8,7-20,7-28,0c-8-8-8-21,0-28c8-8,20-8,28,0C161,156,161,169,153,177z M97,179c-7,7-20,7-27,0c-8-8-8-21,0-28c7-8,20-8,27,0
+		C105,158,105,171,97,179z M99,96c8,7,8,20,0,28c-8,7-20,7-28,0c-8-8-8-21,0-28C79,88,91,88,99,96z M156,295c-8,7-20,7-28,0
+		c-8-8-8-21,0-28c8-8,20-8,28,0C164,274,164,287,156,295z M42,181c-8,7-20,7-28,0c-8-8-8-21,0-28c8-8,20-8,28,0
+		C50,160,50,173,42,181z M99,238c-8,7-20,7-28,0c-8-8-8-21,0-28c8-8,20-8,28,0C107,217,107,230,99,238z"
+            />
+          </g>
+        </svg>
+      </button>
+
+      <div
+        class="article"
+        data-channel="UI"
+        data-card-id="{{keyword}}"
+        data-nav-level="2"
+      >
+        <div class="card-content">
+          <figure
+            class="card-image"
+            data-channel="ROUTE"
+            data-event-prevent-default="true"
+            data-card-id="{{keyword}}"
+            data-nav-level="2"
+          >
+            <img
+              src="{{bgImg}}"
+              data-img-photographer="{{image.photographer_url}}"
+              data-img-info="{{image.info}}"
+              alt="{{image.alt}}"
+            />
+          </figure>
+
+          <header
+            class="card-text"
+            data-channel="ROUTE"
+            data-event-prevent-default="true"
+            data-card-id="{{keyword}}"
+            data-nav-level="2"
+          >
+            <h3>{{headline}}</h3>
+            <p>{{text}}</p>
+          </header>
+
+          <a
+            class="expand-card"
+            href="{{linkDataset.href}}"
+            data-channel="ROUTE"
+            data-event-prevent-default="true"
+            data-card-id="{{keyword}}"
+            data-nav-level="2"
+            ><span class="visually-hidden">expand {{headline}} article</span></a
+          >
+
+          <div class="expanded-content-holder"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

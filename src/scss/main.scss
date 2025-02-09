@@ -1,0 +1,71 @@
+@use '01-vendors/normalize.css';
+@use '02-variables/mixins.scss';
+@use '02-variables/palette.scss' as palette;
+@use '03-components/pages/pages.scss';
+@use '03-components/pages/page-404.scss';
+@use '03-components/cards/cards.scss';
+@use '03-components/cards/cards-features.scss';
+@use '03-components/ui/header.scss';
+@use '03-components/ui/menu-drawer.scss';
+@use '03-components/ui/menu-hamburger.scss';
+@use '03-components/ui/footer.scss';
+@use '03-components/ui/breadcrumbs.scss';
+@use '03-components/pages/page-content.scss';
+
+/* Variables */
+:root {
+  --header-height: 50px;
+  --footer-height: 50px;
+
+  /* Dark color palette */
+  --bg-color: #1d1f21;
+  --fg-color: palette.$Neutral-800;
+  --accent-color: deepskyblue;
+
+  /* Header / Footer coloring */
+  --header-color: palette.$Primary-300;
+  --footer-color: #2c2f33;
+  --border-color: #3a3d42;
+
+  /* Max Content Width */
+  --max-content-width: 1440px;
+}
+
+/* Global Resets/Bases */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: palette.$Neutral-800; // var(--fg-color);
+
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+/*
+   The main stage area
+   min-height = 100vh - header - footer
+*/
+.stage-view,
+#stage-view1 {
+  /* page-view container wraps the .page-content */
+  .page-view {
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 1rem;
+
+    .page-content {
+      /* additional styling if needed */
+    }
+  }
+}

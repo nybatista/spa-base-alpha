@@ -1,0 +1,150 @@
+@use '../../02-variables/globals' as globals;
+@use '../../02-variables/mixins' as mixins;
+@use '../../02-variables/palette' as palette;
+
+#app-header {
+  position: fixed;
+  top: 0;
+  height: globals.$app-header-height;
+  background: palette.$Primary-800;
+  color: palette.$Primary-050;
+  padding: 0 1.5rem;
+  z-index: globals.$z-index-ui;
+  transition: transform 0.125s ease;
+  max-width: 1920px;
+  width: calc(100% + var(--scroll-lock-margin));
+
+  &.hide-header {
+    transform: translateY(-#{globals.$app-header-height});
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include mixins.add-border-shadow;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 10px 0;
+    @media (max-width: 768px) {
+      nav.app-header-content {
+        display: none;
+      }
+    }
+
+    #logo {
+      position: relative;
+      align-self: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      pointer-events: all;
+      letter-spacing: 0.025rem;
+      transition: opacity 0.25s ease-in-out;
+      color: palette.$Primary-100;
+      background: none;
+      border: none;
+      margin: 0;
+      text-align: right;
+
+      &:focus {
+        border: none;
+        outline: 1px solid skyblue;
+      }
+
+      &.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+
+  nav.app-header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    a {
+      position: relative;
+      font-size: 18px;
+      pointer-events: all;
+      cursor: pointer;
+      padding: 0 0.5rem;
+      color: palette.$Primary-300;
+
+      text-decoration: none;
+      user-select: none;
+      height: 100%;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0);
+      transition: all 0.125s ease-in-out;
+
+      &:after {
+        content: '';
+        width: calc(100% - 1rem);
+        position: absolute;
+        left: 0.5rem;
+        bottom: 0.8rem;
+        color: palette.$Primary-200;
+        border-width: 0 0 2px;
+        border-style: solid;
+        opacity: 0;
+        transition: all 0.125s ease-in-out;
+      }
+
+      &.selected {
+        color: palette.$Primary-050;
+        opacity: 1;
+        pointer-events: none;
+      }
+
+      &:hover {
+        opacity: 1;
+        color: palette.$Primary-200;
+
+        &:after {
+          content: '';
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.app-subnav {
+  position: relative;
+
+  nav {
+    position: relative;
+    margin-top: 0.5rem;
+
+    a {
+      position: relative;
+      font-size: 18px;
+      pointer-events: all;
+      cursor: pointer;
+      margin: 0 0.5rem;
+      color: darkslateblue;
+      text-decoration: none;
+      user-select: none;
+
+      opacity: 0.7;
+
+      &.selected {
+        //font-weight: 800;
+        pointer-events: none;
+        color: #000;
+        opacity: 0.8;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

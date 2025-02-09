@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="header-content">
+    <h1 class="site-title">Brand Placeholder</h1>
+    <nav class="site-nav">
+      <!--
+              This starts an 'anonymous loop' over an array passed to this template.
+              We generate an <a> link for each item.
+            -->
+      {{#}}
+      <a
+        class="link-{{pageId}}"
+        data-channel="ROUTE"
+        data-change="{{pageId}}"
+        data-event-prevent-default="true"
+        href="/{{pageId}}"
+      >
+        {{pageId}}
+      </a>
+      {{/}}
+    </nav>
+  </div>
+</header>
+
+<main class="stage-view">
+  <!--
+      The active PageView is appended here, ensuring only one page
+      is displayed at a time in the Single Active Page pattern.
+    -->
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Your Company Name</p>
+    <!-- Additional links or disclaimers could go here -->
+  </div>
+</footer>
