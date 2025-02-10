@@ -17,236 +17,155 @@
     {
       "pageId": "home",
       "isGpt4ImgSearch": true,
-      "imgSearchInput": "spacious reception area with elegant interior design and friendly staff at front desk",
-      "title": "Welcome to Our Professional Space",
-      "desc": "Experience sophistication and warmth in our welcoming reception area. Our team is ready to assist you.",
-      "calloutTitle": "Explore Our Services",
-      "calloutDesc": "Discover how we can help you achieve your goals.",
-      "pageEntityLoc": "office",
-      "isBusiness": true,
-      "pageCategory": "landing",
+      "title": "Welcome to Our Modern Workspace",
+      "desc": "Explore our innovative solutions for your business needs.",
       "img": {
-        "id": 4322027,
-        "imgUrl": "imgs/pexels-photo-4322027.jpeg",
-        "type": "investment",
+        "type": "landing",
+        "id": 3685203,
+        "width": 4160,
+        "height": 6240,
+        "url": "https://www.pexels.com/photo/white-concrete-building-3685203/",
+        "photographer": "Mitchell Luo",
+        "photographer_url": "https://www.pexels.com/@mitchel3uo",
+        "photographer_id": 2017002,
+        "avg_color": "#B5B7C8",
+        "src": {
+          "original": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg",
+          "large2x": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "liked": false,
+        "alt": "Sleek and modern white interior design captured in Melbourne, Australia.",
         "types": [
-          "investment",
-          "work",
-          "stocks",
-          "retirement",
-          "management",
-          "banking",
-          "investments"
+          "landing"
         ],
-        "width": 4000,
-        "height": 6000,
-        "alt": "Facade of a contemporary building with lush greenery in Milan's Bosco Verticale.",
         "pageCategory": [
           "landing"
         ],
         "pageEntityLoc": [
-          "office",
           "any",
-          "leisure"
+          "office"
         ],
-        "url": "https://www.pexels.com/photo/modern-residential-building-facade-decorated-with-green-plants-4322027/",
-        "photographer": "Francesco Ungaro",
-        "photographer_url": "https://www.pexels.com/@francesco-ungaro",
-        "photographer_id": 21273,
-        "avg_color": "#1F3832",
-        "src": {
-          "original": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg",
-          "large2x": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-        }
-      }
-    },
-    {
-      "pageId": "services",
-      "cardId": "",
-      "isGpt4ImgSearch": true,
-      "imgSearchInput": "professional team discussing strategies in a bright open office environment with laptops",
-      "title": "Our Range of Services",
-      "desc": "Experience innovation and excellence with our professional team. Unlock your potential with us.",
-      "calloutTitle": "",
-      "calloutDesc": "",
-      "pageEntityLoc": "office",
-      "isBusiness": true,
-      "pageCategory": "any",
-      "img": {
-        "alt": "Firemen Blowing Water on Fire",
-        "id": 280076,
-        "imgUrl": "imgs/pexels-photo-280076.jpeg",
-        "type": "services",
-        "types": [
-          "fire"
-        ],
-        "width": 1920,
-        "height": 1002,
-        "pageCategory": [
-          "any"
-        ],
-        "pageEntityLoc": [
-          "office",
-          "any",
-          "warehouse"
-        ],
-        "url": "https://www.pexels.com/photo/accident-action-adult-blaze-280076/",
-        "photographer": "Pixabay",
-        "photographer_url": "https://www.pexels.com/@pixabay",
-        "photographer_id": 2659,
-        "src": {
-          "original": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg",
-          "large2x": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/280076/pexels-photo-280076.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-        },
-        "score": 1
+        "imgUrl": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       },
-      "content": [
-        {
-          "pageId": "services",
-          "cardId": "design",
-          "title": "Innovative Design Solutions",
-          "desc": "Transform your vision into reality with our cutting-edge design services.",
-          "calloutTitle": "Learn More",
-          "calloutDesc": "Explore how our design expertise can elevate your brand.",
-          "pageEntityLoc": "office",
-          "isBusiness": true,
-          "pageCategory": "any",
-          "img": {
-            "alt": "Inside A Cafe",
-            "id": 2199190,
-            "imgUrl": "imgs/pexels-photo-2199190.jpeg",
-            "type": "services",
-            "types": [
-              "services"
-            ],
-            "width": 3024,
-            "height": 4032,
-            "pageCategory": [
-              "any"
-            ],
-            "pageEntityLoc": [
-              "office",
-              "any"
-            ],
-            "url": "https://www.pexels.com/photo/inside-a-store-2199190/",
-            "photographer": "Dmitry Zvolskiy",
-            "photographer_url": "https://www.pexels.com/@zvolskiy",
-            "photographer_id": 708150,
-            "src": {
-              "original": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg",
-              "large2x": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/2199190/pexels-photo-2199190.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-            },
-            "score": 2
-          }
-        },
-        {
-          "pageId": "services",
-          "cardId": "digital",
-          "isGpt4ImgSearch": true,
-          "imgSearchInput": "marketing specialist managing social media ads on computer with real-time stats",
-          "title": "Digital Marketing Strategies",
-          "desc": "Boost your online presence and reach your target audience effectively with our digital marketing services.",
-          "calloutTitle": "Get Started",
-          "calloutDesc": "Enhance your digital footprint with us.",
-          "pageEntityLoc": "office",
-          "isBusiness": true,
-          "pageCategory": "any",
-          "img": {
-            "alt": "Close up of phrase 'Work hard Dream big' in white on black glass wall",
-            "id": 3300460,
-            "imgUrl": "imgs/pexels-photo-3300460.jpeg",
-            "type": "services",
-            "types": [
-              "services"
-            ],
-            "width": 3000,
-            "height": 2250,
-            "pageCategory": [
-              "any"
-            ],
-            "pageEntityLoc": [
-              "office",
-              "any"
-            ],
-            "url": "https://www.pexels.com/photo/selective-focus-photography-of-work-hard-dream-big-texts-on-clear-glass-wall-3300460/",
-            "photographer": "Roman Koval",
-            "photographer_url": "https://www.pexels.com/@kovalrk",
-            "photographer_id": 84945,
-            "src": {
-              "original": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg",
-              "large2x": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/3300460/pexels-photo-3300460.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-            },
-            "score": 2
-          }
-        }
+      "calloutTitle": "Don’t Miss Out on home",
+      "calloutDesc": "Discover how home can benefit you. Take advantage of our exclusive resources and offers!",
+      "lorem": [
+        "Lorem paragraph #1 about home..."
       ]
     },
     {
       "pageId": "about",
+      "cardId": "",
       "isGpt4ImgSearch": true,
-      "imgSearchInput": "colleagues collaborating in modern meeting room with glass walls and city skyline view",
-      "title": "Our Story",
-      "desc": "Discover our journey towards excellence and our commitment to innovation.",
-      "calloutTitle": "Meet Our Team",
-      "calloutDesc": "Learn about the talented individuals driving our success.",
-      "pageEntityLoc": "aboutmain",
-      "isBusiness": true,
-      "pageCategory": "about",
+      "title": "About Us",
+      "desc": "Discover our mission to redefine collaboration in the workplace.",
       "img": {
-        "alt": "Red  Led Light With Silhouette Of A Man",
-        "id": 3094799,
-        "imgUrl": "imgs/pexels-photo-3094799.jpeg",
-        "type": "abstract",
+        "alt": "Group Of People Using Laptops",
+        "id": 1560932,
+        "imgUrl": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "type": "about",
         "types": [
-          "abstract"
+          "about us",
+          "about",
+          "contact-us",
+          "about me",
+          "our story",
+          "team",
+          "our-team",
+          "our team",
+          "careers"
         ],
-        "width": 3778,
-        "height": 4722,
+        "width": 5032,
+        "height": 3355,
         "pageCategory": [
-          "any"
+          "about"
         ],
         "pageEntityLoc": [
+          "office",
           "any"
         ],
-        "url": "https://www.pexels.com/photo/red-led-light-with-silhouette-of-a-man-3094799/",
-        "photographer": "Akwice",
-        "photographer_url": "https://www.pexels.com/@akwice-1527735",
-        "photographer_id": 1527735,
+        "url": "https://www.pexels.com/photo/group-of-people-using-laptops-1560932/",
+        "photographer": "Daria Shevtsova",
+        "photographer_url": "https://www.pexels.com/@daria",
+        "photographer_id": 220024,
         "src": {
-          "original": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg",
-          "large2x": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+          "original": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg",
+          "large2x": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "score": 2
+      },
+      "calloutTitle": "Don’t Miss Out on about",
+      "calloutDesc": "Discover how about can benefit you. Take advantage of our exclusive resources and offers!",
+      "lorem": [
+        "Lorem paragraph #1 about about..."
+      ],
+      "content": [
+        {
+          "pageId": "about",
+          "cardId": "contact-us",
+          "title": "Contact Us",
+          "desc": "Get in touch with our team to start a conversation.",
+          "calloutTitle": "Reach Out Today",
+          "calloutDesc": "Let's discuss how we can help your business thrive.",
+          "placeholderArticle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "img": {
+            "alt": "Group of People Watching on Laptop",
+            "id": 1595385,
+            "imgUrl": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "type": "about",
+            "types": [
+              "about us",
+              "about",
+              "contact-us",
+              "about me",
+              "our story",
+              "team",
+              "our-team",
+              "our team",
+              "careers"
+            ],
+            "width": 3000,
+            "height": 2000,
+            "pageCategory": [
+              "about"
+            ],
+            "pageEntityLoc": [
+              "office",
+              "any"
+            ],
+            "url": "https://www.pexels.com/photo/group-of-people-watching-on-laptop-1595385/",
+            "photographer": "Fox",
+            "photographer_url": "https://www.pexels.com/@hillaryfox",
+            "photographer_id": 571159,
+            "src": {
+              "original": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg",
+              "large2x": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "score": 3
+          },
+          "lorem": [
+            "Lorem paragraph #1 about contact-us..."
+          ]
         }
-      }
+      ]
     }
   ]
 }

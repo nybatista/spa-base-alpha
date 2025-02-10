@@ -16,7 +16,7 @@ const hamburgerBreakpoint = 768;
 import { spyneJSConfig } from './debug-spynejs-config.js';
 
 const useLocalStorage = false;
-const useDebuggerMode = true;
+const useDebuggerMode = false;
 
 const AppContentDataURL = useDebuggerMode
   ? AppContentDataDebug
@@ -51,18 +51,16 @@ const config = {
       isHidden: false,
       add404s: true,
       routes: {
-        routePath: {
-          routeName: 'pageId',
-          home: '',
-          services: {
-            routePath: {
-              routeName: 'cardId',
-              design: 'design',
-              digital: 'digital',
-            },
-          },
-          about: 'about',
-        },
+        "routePath": {
+          "routeName": "pageId",
+          "home": "",
+          "about": {
+            "routePath": {
+              "routeName": "cardId",
+              "contact-us": "contact-us"
+            }
+          }
+        }
       },
     },
   },

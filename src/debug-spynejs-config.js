@@ -5,18 +5,10 @@ export const spyneJSConfig = {
         "routePath": {
           "routeName": "pageId",
           "home": "",
-          "travel": {
-            "routePath": {
-              "routeName": "cardId",
-              "tours": "tours",
-              "destinations": "destinations",
-              "hotel": "hotel"
-            }
-          },
           "about": {
             "routePath": {
               "routeName": "cardId",
-              "stories": "stories"
+              "contact-us": "contact-us"
             }
           }
         }

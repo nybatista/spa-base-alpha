@@ -1,7 +1,7 @@
 {
   "text": {
-    "header": "Modern Travel Hub",
-    "footer": "Experience the world with us."
+    "header": "InnovateBiz Solutions",
+    "footer": "Empowering businesses with cutting-edge solutions tailored for success."
   },
   "uiProps": {
     "appTitle": "App ffTitle",
@@ -17,41 +17,41 @@
     {
       "pageId": "home",
       "isGpt4ImgSearch": true,
-      "title": "Welcome to Our Site",
-      "desc": "Explore our services and discover exciting offers.",
+      "title": "Welcome to Our Website",
+      "desc": "Discover our innovative solutions for your business needs.",
       "img": {
-        "type": "landing",
-        "id": 12276010,
-        "width": 2560,
-        "height": 1697,
-        "url": "https://www.pexels.com/photo/view-of-sea-under-bright-sky-12276010/",
-        "photographer": "anait film",
-        "photographer_url": "https://www.pexels.com/@anaitttttt",
-        "photographer_id": 22209777,
-        "avg_color": "#909996",
-        "src": {
-          "original": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg",
-          "large2x": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-        },
-        "liked": false,
-        "alt": "A tranquil seascape featuring a vast ocean and clear sky, ideal for relaxation.",
+        "alt": "Low-angle Photo of Four High-rise Curtain Wall Buildings Under White Clouds and Blue Sky",
+        "id": 830891,
+        "imgUrl": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "type": "architecture",
         "types": [
-          "landing"
+          "architecture",
+          "interior design"
         ],
+        "width": 5158,
+        "height": 3434,
         "pageCategory": [
           "landing"
         ],
         "pageEntityLoc": [
+          "office",
           "any",
-          "office"
+          "artstudio"
         ],
-        "imgUrl": "https://images.pexels.com/photos/12276010/pexels-photo-12276010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "url": "https://www.pexels.com/photo/low-angle-photo-of-four-high-rise-curtain-wall-buildings-under-white-clouds-and-blue-sky-830891/",
+        "photographer": "Philipp Birmes",
+        "photographer_url": "https://www.pexels.com/@frankfurtpictures",
+        "photographer_id": 278065,
+        "src": {
+          "original": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg",
+          "large2x": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        }
       },
       "calloutTitle": "Don’t Miss Out on home",
       "calloutDesc": "Discover how home can benefit you. Take advantage of our exclusive resources and offers!",
@@ -60,190 +60,15 @@
       ]
     },
     {
-      "pageId": "travel",
-      "cardId": "",
-      "isGpt4ImgSearch": true,
-      "title": "Scenic Travel Destinations",
-      "desc": "Discover the most captivating travel spots.",
-      "img": {
-        "id": 18165728,
-        "width": 7468,
-        "height": 4983,
-        "url": "https://www.pexels.com/photo/ferris-wheel-against-the-sky-18165728/",
-        "photographer": "Vladimir Srajber",
-        "photographer_url": "https://www.pexels.com/@vladimirsrajber",
-        "photographer_id": 1182448,
-        "avg_color": "#5383B1",
-        "src": {
-          "original": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg",
-          "large2x": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/18165728/pexels-photo-18165728.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-        },
-        "liked": false,
-        "alt": "Captivating view of an illuminated Ferris wheel against a clear evening sky in Balatonlelle."
-      },
-      "calloutTitle": "Don’t Miss Out on travel",
-      "calloutDesc": "Discover how travel can benefit you. Take advantage of our exclusive resources and offers!",
-      "lorem": [
-        "Lorem paragraph #1 about travel..."
-      ],
-      "content": [
-        {
-          "pageId": "travel",
-          "cardId": "tours",
-          "isGpt4ImgSearch": true,
-          "title": "Exciting Tours",
-          "desc": "Embark on unforgettable journeys.",
-          "calloutTitle": "Book Your Adventure",
-          "calloutDesc": "Find the perfect tour for you.",
-          "placeholderArticle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-          "img": {
-            "alt": "Empty Subway Train",
-            "id": 302428,
-            "imgUrl": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "type": "tours",
-            "types": [
-              "tours",
-              "tour",
-              "destinations",
-              "destination",
-              "location",
-              "travel"
-            ],
-            "width": 4207,
-            "height": 2799,
-            "pageCategory": [
-              "any"
-            ],
-            "pageEntityLoc": [
-              "office",
-              "any",
-              "leisure"
-            ],
-            "url": "https://www.pexels.com/photo/architecture-chairs-city-commuter-302428/",
-            "photographer": "Pixabay",
-            "photographer_url": "https://www.pexels.com/@pixabay",
-            "photographer_id": 2659,
-            "src": {
-              "original": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg",
-              "large2x": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-            },
-            "score": 3
-          },
-          "lorem": [
-            "Lorem paragraph #1 about tours...",
-            "Lorem paragraph #2 about tours..."
-          ]
-        },
-        {
-          "pageId": "travel",
-          "cardId": "destinations",
-          "isGpt4ImgSearch": true,
-          "title": "Featured Destinations",
-          "desc": "Discover cultural landmarks around the globe.",
-          "img": {
-            "alt": "Sad woman in respiratory mask with suitcase and passport",
-            "id": 4127627,
-            "imgUrl": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "type": "tours",
-            "types": [
-              "tours",
-              "tour",
-              "destinations",
-              "destination",
-              "location",
-              "travel"
-            ],
-            "width": 6000,
-            "height": 4000,
-            "pageCategory": [
-              "any"
-            ],
-            "pageEntityLoc": [
-              "any",
-              "leisure"
-            ],
-            "url": "https://www.pexels.com/photo/sad-woman-in-respiratory-mask-with-suitcase-and-passport-4127627/",
-            "photographer": "Gustavo Fring",
-            "photographer_url": "https://www.pexels.com/@gustavo-fring",
-            "photographer_id": 2206740,
-            "src": {
-              "original": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg",
-              "large2x": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/4127627/pexels-photo-4127627.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-            },
-            "score": 2
-          },
-          "calloutTitle": "Don’t Miss Out on destinations",
-          "calloutDesc": "Discover how destinations can benefit you. Take advantage of our exclusive resources and offers!",
-          "lorem": [
-            "Lorem paragraph #1 about destinations...",
-            "Lorem paragraph #2 about destinations..."
-          ]
-        },
-        {
-          "pageId": "travel",
-          "cardId": "hotel",
-          "isGpt4ImgSearch": true,
-          "title": "Luxury Stay Options",
-          "desc": "Experience comfort and luxury during your travels.",
-          "img": {
-            "id": 30638626,
-            "width": 5326,
-            "height": 4000,
-            "url": "https://www.pexels.com/photo/hotel-des-invalides-in-paris-with-dramatic-sky-30638626/",
-            "photographer": "Travel with  Lenses",
-            "photographer_url": "https://www.pexels.com/@travel-with-lenses-734723610",
-            "photographer_id": 734723610,
-            "avg_color": "#8A8B8D",
-            "src": {
-              "original": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg",
-              "large2x": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/30638626/pexels-photo-30638626.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
-            },
-            "liked": false,
-            "alt": "Hôtel des Invalides"
-          },
-          "calloutTitle": "Don’t Miss Out on hotel",
-          "calloutDesc": "Discover how hotel can benefit you. Take advantage of our exclusive resources and offers!",
-          "lorem": [
-            "Lorem paragraph #1 about hotel...",
-            "Lorem paragraph #2 about hotel..."
-          ]
-        }
-      ]
-    },
-    {
       "pageId": "about",
       "cardId": "",
       "isGpt4ImgSearch": true,
       "title": "About Us",
-      "desc": "Get to know our team and vision.",
+      "desc": "Learn about our team and commitment to excellence.",
       "img": {
-        "alt": "Group of Women Standing Near Desk",
-        "id": 1181438,
-        "imgUrl": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Silhouette Photography of Group of People Jumping during Golden Time",
+        "id": 1000445,
+        "imgUrl": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "type": "about",
         "types": [
           "about us",
@@ -256,28 +81,29 @@
           "our team",
           "careers"
         ],
-        "width": 5797,
-        "height": 3870,
+        "width": 3456,
+        "height": 2304,
         "pageCategory": [
           "about"
         ],
         "pageEntityLoc": [
           "office",
-          "any"
+          "any",
+          "artstudio"
         ],
-        "url": "https://www.pexels.com/photo/group-group-together-indoors-lights-1181438/",
-        "photographer": "Christina Morillo",
-        "photographer_url": "https://www.pexels.com/@divinetechygirl",
-        "photographer_id": 473730,
+        "url": "https://www.pexels.com/photo/silhouette-photography-of-group-of-people-jumping-during-golden-time-1000445/",
+        "photographer": "Belle Co",
+        "photographer_url": "https://www.pexels.com/@belle-co-99483",
+        "photographer_id": 99483,
         "src": {
-          "original": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg",
-          "large2x": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "large": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "medium": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "small": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&h=130",
-          "portrait": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-          "landscape": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-          "tiny": "https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+          "original": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg",
+          "large2x": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
         },
         "score": 2
       },
@@ -289,37 +115,57 @@
       "content": [
         {
           "pageId": "about",
-          "cardId": "stories",
-          "calloutTitle": "Read Our Stories",
-          "calloutDesc": "Discover the tales that inspire us.",
-          "placeholderArticle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+          "cardId": "contact-us",
+          "title": "Contact Us",
+          "desc": "Reach out to us for inquiries or collaborations.",
+          "calloutTitle": "Don’t Miss Out on contact-us",
+          "calloutDesc": "Discover how contact-us can benefit you. Take advantage of our exclusive resources and offers!",
+          "placeholderArticle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           "img": {
-            "id": 19890507,
-            "width": 4000,
-            "height": 6000,
-            "url": "https://www.pexels.com/photo/an-alligator-is-swimming-in-the-water-19890507/",
-            "photographer": "Alain Garcia",
-            "photographer_url": "https://www.pexels.com/@alain-garcia-883335085",
-            "photographer_id": 883335085,
-            "avg_color": "#405649",
+            "alt": "Top View Photo Of People Near Wooden Table",
+            "id": 3183150,
+            "imgUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "type": "about",
+            "types": [
+              "about us",
+              "about",
+              "contact-us",
+              "about me",
+              "our story",
+              "team",
+              "our-team",
+              "our team",
+              "careers"
+            ],
+            "width": 6000,
+            "height": 4004,
+            "pageCategory": [
+              "about"
+            ],
+            "pageEntityLoc": [
+              "office",
+              "any",
+              "artstudio"
+            ],
+            "url": "https://www.pexels.com/photo/top-view-photo-of-people-near-wooden-table-3183150/",
+            "photographer": "fauxels",
+            "photographer_url": "https://www.pexels.com/@fauxels",
+            "photographer_id": 1281351,
             "src": {
-              "original": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg",
-              "large2x": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-              "large": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "medium": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "small": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&h=130",
-              "portrait": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-              "landscape": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-              "tiny": "https://images.pexels.com/photos/19890507/pexels-photo-19890507.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+              "original": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+              "large2x": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
             },
-            "liked": false,
-            "alt": "Close-up of an American alligator in the Everglades, surrounded by water and vegetation."
+            "score": 3
           },
-          "title": "Learn more about stories",
-          "desc": "Here’s a generic descriptive text related to stories. Explore more details and get insights here!",
           "lorem": [
-            "Lorem paragraph #1 about stories...",
-            "Lorem paragraph #2 about stories..."
+            "Lorem paragraph #1 about contact-us...",
+            "Lorem paragraph #2 about contact-us..."
           ]
         }
       ]

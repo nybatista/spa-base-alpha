@@ -27,6 +27,7 @@
     transition:
       left 0.25s ease-in-out,
       opacity 0.125s ease-in-out;
+      border-top-right-radius: 4px;
 
       box-shadow: 9px 0 15px -9px rgba(0,0,0,.3);
       //border: 1px solid palette.$Neutral-100;

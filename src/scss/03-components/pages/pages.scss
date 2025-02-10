@@ -45,6 +45,9 @@
 
       .page-header {
         display: flex;
+        position: relative;
+        top: 1rem;
+        margin: 0;
         // align-items: stretch;
         /* Optionally define a min-height if desired */
         min-height: 480px;
@@ -52,7 +55,6 @@
         max-height: 620px;
         border-radius: 8px;
         overflow: hidden;
-        margin: 1rem 0 0 0;
 
         .callout {
           /* Keep the callout narrower if you want the text left, image right */
@@ -101,9 +103,9 @@
             &::after {
               position: absolute;
               content: ' ';
-              top: 1rem;
-              left: 1rem;
-              width: calc(100% - 2rem);
+              top: 0;
+              left: 0;
+              width: 100%;
               min-height: 480px;
               height: 42vh;
               max-height: 620px;
@@ -133,9 +135,9 @@
           }
 
           .callout {
-            margin: 0 1rem;
+            margin: 0;
             padding: 0;
-            width: calc(100% - 2rem);
+            width: 100%;
             position: absolute;
             display: flex;
             align-items: center;
@@ -144,9 +146,6 @@
             text-align: center;
             // ------
 
-            /* margin: 0 1rem; */
-            padding: 0;
-            width: calc(100% - 2rem);
             /* position: absolute; */
             display: flex;
             align-items: center;
@@ -157,7 +156,7 @@
             height: min-content;
             position: absolute;
             z-index: 1;
-            left: 1rem;
+            left: 0;
             /* margin: auto; */
             align-self: center;
             justify-self: center;
