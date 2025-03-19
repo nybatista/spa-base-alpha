@@ -29,14 +29,16 @@ export class AppTraits extends SpyneTrait {
     const onAppDataReturned = (e) => {
       this.props.data = e['CHANNEL_APP_API'].payload;
       const deepLinkPayload = e['CHANNEL_ROUTE'].payload;
+      this.props.deepLinkPayload = deepLinkPayload;
       const {navLinks} = deepLinkPayload;
       const uiText = this.props.data?.text;
+      this.props.uiText = uiText;
       console.log('APP DATA RETURNED ', e, {deepLinkPayload, uiText});
       const { routeData } = deepLinkPayload;
 
 
       try {
-        this.appTraits$SendDataEvent(routeData, {uiText, deepLinkPayload});
+        this.appTraits$SendDataEvent(routeData, true);
       } catch (e) {
         console.log('ERROR FOR ROUTE', e);
       }
@@ -62,21 +64,22 @@ export class AppTraits extends SpyneTrait {
     this.appTraits$SendDataEvent(routeData);
   }
 
-  static appTraits$SendDataEvent(routeData, initialData) {
+  static appTraits$SendDataEvent(routeData, isInitialData = false) {
     const pageData = this.appTraits$GetCurrentPageData(routeData) || {
       pageId: '404',
     };
-    const action = initialData
+    const action = isInitialData
       ? 'CHANNEL_APP_INIT_EVENT'
       : 'CHANNEL_APP_DATA_EVENT';
 
-    const { deepLinkPayload, uiText} = initialData;
-   // const payload = { ...pageData, ...(initialData || {}) };
+    const { deepLinkPayload, uiText} = this.props;
+    // const payload = { ...pageData, ...(initialData || {}) };
     const payload = safeClone(pageData);
     payload['uiText'] = uiText;
     payload['deepLinkPayload'] = deepLinkPayload;
 
-    console.log('PAYLOAD PAGE CARD ', { payload, pageData, action, initialData });
+    console.log('PAYLOAD PAGE CARD ', { payload, pageData, action, isInitialData });
+    console.log("PAYLOAD PAGE CARD CHANNEL DATA ",this.props.data);
 
     this.sendChannelPayload(action, payload);
   }
