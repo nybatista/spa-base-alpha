@@ -13,7 +13,7 @@
 }
 
 /* Center everything inside a max-width container */
-.container {
+.cards-container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -27,7 +27,44 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 1200px;
 }
+
+
+
+.card-list:has(> li:first-child:last-child) {
+  /* Exactly 1 child */
+  //grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  .card {
+    width: calc(100vw - 3rem);
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+
+}
+
+.card-list:has(> li:nth-child(2):last-child) {
+  /* Exactly 2 children */
+  grid-template-columns: repeat(2, 1fr);
+
+  .card {
+    width: calc(100vw - 3rem);
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+}
+
+.card-list:has(> li:nth-child(3)) {
+  /* 3 or more children */
+  //grid-template-columns: repeat(3, 1fr);
+}
+
+
+
 
 /* For smaller screens, you could add a media query to reduce columns */
 @media (max-width: 900px) {

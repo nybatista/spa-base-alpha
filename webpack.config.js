@@ -244,7 +244,7 @@ function getWebpackPlugins() {
       getCopyPatternsPlugin()
     ];
   } else if (_testMode === false) {
-    return [htmlPlugin, definePlugin];
+    return [htmlPlugin, definePlugin, spyneCmsServerPlugin()];
   } else {
     return [htmlPlugin, definePlugin];
   }

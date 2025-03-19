@@ -1,4 +1,4 @@
-import { SpyneTrait, ChannelPayloadFilter, SpyneAppProperties } from 'spyne';
+import { SpyneTrait, ChannelPayloadFilter, SpyneAppProperties, safeClone } from 'spyne';
 import {
   whereEq,
   filter,
@@ -69,7 +69,12 @@ export class AppTraits extends SpyneTrait {
     const action = initialData
       ? 'CHANNEL_APP_INIT_EVENT'
       : 'CHANNEL_APP_DATA_EVENT';
-    const payload = { ...pageData, ...(initialData || {}) };
+
+    const { deepLinkPayload, uiText} = initialData;
+   // const payload = { ...pageData, ...(initialData || {}) };
+    const payload = safeClone(pageData);
+    payload['uiText'] = uiText;
+    payload['deepLinkPayload'] = deepLinkPayload;
 
     console.log('PAYLOAD PAGE CARD ', { payload, pageData, action, initialData });
 

@@ -2,6 +2,7 @@ import { SpyneApp, SpyneAppProperties, Channel, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import AppContentData from 'data/app-data.json';
 import AppContentDataDebug from 'data/debug-app-data.json';
+import { SpynePluginJSONCms } from "@franciscobatista/spyne-plugin-json-cms";
 
 import { AppView } from './app/app-view.js';
 
@@ -39,7 +40,7 @@ const config = {
       mediaQueries: {
         showMenuDrawer: `(max-width: ${hamburgerBreakpoint}px)`,
       },
-      events: ['click', 'mouseover'],
+      events: ["click", "mouseover", "message"],
       listenForScroll: true,
       listenForOrientation: true,
       debounceMSTimeForScroll: 50,
@@ -92,9 +93,9 @@ if (process.env.NODE_ENV === 'development') {
     maximize: true,
   };
 
-  // const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
-  // SpyneApp.registerPlugin(spyneCmsPlugin);
-  // dataMapper = SpyneApp.pluginsFn.mapCmsData;
+   const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
+   SpyneApp.registerPlugin(spyneCmsPlugin);
+   dataMapper = SpyneApp.pluginsFn.mapCmsData;
 }
 
 SpyneApp.registerChannel(new ChannelMenuDrawer());
@@ -103,9 +104,9 @@ if (useLocalStorage !== true) {
   SpyneApp.registerChannel(
     new ChannelFetch('CHANNEL_APP_API', {
       url: AppContentDataURL,
-      map42: dataMapper,
+      map: dataMapper,
 
-      map: (d, meta = {}) => {
+      map5: (d, meta = {}) => {
         if (useLocalStorage === true && ai_gen_appData !== null) {
           // d = ai_gen_appData;
         }

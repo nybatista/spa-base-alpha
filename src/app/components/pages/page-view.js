@@ -13,6 +13,7 @@ export class PageView extends ViewStream {
     props.data.imgUrl = props.data?.img?.imgUrl || props.data.img?.src?.large;
 
     console.log('PAGE DATA IS ', props.data);
+    props.data.__cms__isProxy = true;
     props.template = props.data.cardId
       ? PageCardTmpl
       : props.data.pageId === 'home'
