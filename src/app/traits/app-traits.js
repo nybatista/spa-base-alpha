@@ -48,6 +48,14 @@ export class AppTraits extends SpyneTrait {
     this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(
       onAppDataReturned,
     );
+
+
+    /**
+     * TODO: CHANNEL_APP_STATE, listens to CHANNEL_APP_DATA
+     * TODO: payloadFIlter, CHANNEL_ROUTE_CHANGE_EVENT, add 2nd subscribe
+     *
+     * */
+
   }
   appTraits$SubscribeToRouteChannel() {
     const routePayloadFilter = new ChannelPayloadFilter({
