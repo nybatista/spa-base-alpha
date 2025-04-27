@@ -25,19 +25,23 @@ export class ChannelMenuDrawer extends Channel {
       payload: (p) => p?.routeData?.eventType === 'menuDrawer',
     });
 
-    const win$ = this.getChannel('CHANNEL_WINDOW', breakPointFilter);
-    win$.subscribe(this.onWindowEvent.bind(this));
+    const appInitFilter =  new ChannelPayloadFilter({
+      action: "CHANNEL_APP_INIT_EVENT"
+    });
 
-    const ui$ = this.getChannel('CHANNEL_UI', menuDrawerBtnFilter);
-    ui$.subscribe(this.onUiClick.bind(this));
 
-    const route$ = this.getChannel('CHANNEL_ROUTE', menuDrawerRouteFilter);
-    route$.subscribe(this.onUiClick.bind(this));
+    this.getChannel('CHANNEL_WINDOW', breakPointFilter)
+      .subscribe(this.onWindowEvent.bind(this));
 
-    const app$ = this.getChannel('CHANNEL_APP', new ChannelPayloadFilter({action: "CHANNEL_APP_INIT_EVENT"})).subscribe(this.onMenuDrawerInit.bind(this));
+    this.getChannel('CHANNEL_UI', menuDrawerBtnFilter)
+      .subscribe(this.onUiClick.bind(this));
 
-    //const appRoute$ = this.getChannel('CHANNEL_APP_ROUTE');
-    //appRoute$.subscribe(this.onAppRouteEvent.bind(this));
+    this.getChannel('CHANNEL_ROUTE', menuDrawerRouteFilter)
+      .subscribe(this.onUiClick.bind(this));
+
+    this.getChannel('CHANNEL_APP', appInitFilter)
+      .subscribe(this.onMenuDrawerInit.bind(this));
+
   }
 
   onMenuDrawerInit(e){
@@ -49,9 +53,7 @@ export class ChannelMenuDrawer extends Channel {
 
   }
 
-  onAppRouteEvent(e) {
-    this.sendMenuDrawerEvent(false);
-  }
+
 
   onUiClick(e) {
     const { isHamburger } = e.payload;
@@ -94,7 +96,5 @@ export class ChannelMenuDrawer extends Channel {
       'CHANNEL_MENU_DRAWER__SHOW_EVENT', 'CHANNEL_MENU_DRAWER__HIDE_EVENT'];
   }
 
-  onViewStreamInfo(obj) {
-    //let data = obj.props();
-  }
+
 }

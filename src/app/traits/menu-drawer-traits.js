@@ -1,17 +1,6 @@
 import { SpyneTrait, ViewStream } from 'spyne';
 import MenuDrawerNavTmpl from 'components/ui/templates/ui-menu-drawer-nav.tmpl.html';
 
-import {
-  compose,
-  head,
-  keys,
-  filter,
-  equals,
-  isEmpty,
-  isNil,
-  not,
-  either,
-} from 'ramda';
 
 export class MenuDrawerTraits extends SpyneTrait {
   constructor(context) {
@@ -67,84 +56,5 @@ export class MenuDrawerTraits extends SpyneTrait {
     this.props.el$('a.nav').setActiveItem('selected', activeSel);
   }
 
-  static menuDrawer$OnWindowShadeEvent(e) {
-    const { scrollY, scrollDir } = e.payload;
-    const showHeader = scrollDir === 'up' || scrollY < 50;
-    this.props.el$.toggleClass('hide-header', !showHeader);
-  }
 
-  static menuDrawer$CreateCardStateMachine() {
-    let prevPageId, prevCardId;
-    let prevCardIdExists = false;
-    let cardState, prevCardState;
-
-    const exists = compose(not, either(isNil, isEmpty));
-
-    // payload is route data
-    const getCurrentState = (payload) => {
-      const { isDeepLink, routeData, pathsRemoved } = payload;
-      const isAppLink = !isDeepLink;
-      const { pageId, cardId } = routeData;
-      const cardIdExists = exists(cardId);
-      const isNewCard = cardIdExists && prevCardIdExists;
-      const pageChanged = pageId !== prevPageId;
-      const prevCardStateIsExpanded = [
-        'expand',
-        'reveal',
-        'crossFade',
-      ].includes(prevCardState);
-
-      const expand =
-        cardIdExists &&
-        isAppLink &&
-        prevCardStateIsExpanded === false &&
-        isNewCard === false;
-      const minimize =
-        isAppLink &&
-        prevCardStateIsExpanded &&
-        isNewCard === false &&
-        pageChanged === false;
-      const crossFade =
-        prevCardStateIsExpanded && isNewCard && pageChanged === false;
-      const reveal =
-        (cardId && isDeepLink) ||
-        (prevCardStateIsExpanded && isNewCard && pageChanged === true);
-
-      cardState = compose(
-        head,
-        keys,
-        filter(equals(true)),
-      )({ expand, minimize, crossFade, reveal });
-      /*console.log(" CARD VARIABLES ", {
-        cardState,
-        cardIdExists,
-        isAppLink,
-        prevCardStateIsExpanded,
-        isNewCard,
-        prevCardIdExists,
-        prevCardState,
-        cardId,
-        prevCardId,
-        pageId,
-        prevPageId,
-        expand,
-        minimize,
-        crossFade,
-        reveal,
-        isDeepLink
-
-      });*/
-
-      const previousCardId = prevCardId;
-
-      prevPageId = pageId;
-      prevCardId = cardId;
-      prevCardState = cardState;
-      prevCardIdExists = cardIdExists;
-
-      return { pageChanged, pathsRemoved, cardState, previousCardId };
-    };
-
-    return getCurrentState;
-  }
 }

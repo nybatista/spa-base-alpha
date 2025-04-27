@@ -4,9 +4,9 @@ import { AppGenCall } from './app/app-gen-call.js';
 // Register console plugin
 SpyneApp.registerPlugin(
   new SpynePluginConsole({
-    position: ['bottom', 'left'],
-    minimize: true,
+    position: ['bottom', 'right'],
+    minimize: false,
   }),
 );
 
-new AppGenCall().appendToNull();
+//new AppGenCall().appendToNull();

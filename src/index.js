@@ -1,6 +1,6 @@
 import { SpyneApp, SpyneAppProperties, Channel, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
-import AppContentData from 'data/app-data.json';
+import AppContentData from 'data/debug-app-data.json';
 import AppContentDataDebug from 'data/debug-app-data.json';
 import { SpynePluginJSONCms } from "@franciscobatista/spyne-plugin-json-cms";
 
@@ -32,7 +32,7 @@ const ai_gen_SpyneJSConfig = JSON.parse(
 
 console.log('ITEMS ', { ai_gen_appData, ai_gen_SpyneJSConfig });
 
-const config = {
+const config1a = {
   debug: true,
 
   channels: {
@@ -66,6 +66,7 @@ const config = {
     },
   },
 };
+const config = {"debug":true,"channels":{"ROUTE":{"routes":{"routePath":{"routeName":"pageId","home":"","fun widgets":{"routePath":{"routeName":"cardId","electronic widgets":"electronic widgets","mechanical widges":"mechanical widges"}},"about":{"routePath":{"routeName":"cardId","Team":"Team"}}}}},"WINDOW":{"events":["click","mouseover"]}}};
 
 if (useDebuggerMode === true) {
   config.channels.ROUTE.routes = spyneJSConfig.channels.ROUTE.routes;
@@ -85,7 +86,7 @@ console.log('APP CONFIG ', appConfig);
 SpyneApp.init(appConfig);
 SpyneApp.registerChannel(new ChannelApp());
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development2') {
   const cmsPluginConfig = {
     position: ['bottom', 'right'],
     openOnLoad: true,
@@ -121,9 +122,9 @@ if (useLocalStorage !== true) {
   );
 }
 
-//if (process.env.NODE_ENV === 'development') {
-//import('./dev-tools.js');
-//}
+if (process.env.NODE_ENV === 'development') {
+import('./dev-tools.js');
+}
 
 if (setOld) {
   new AppViewOld().prependToDom(document.querySelector('body'));

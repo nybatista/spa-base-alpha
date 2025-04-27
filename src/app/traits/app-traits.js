@@ -1,40 +1,20 @@
 import { SpyneTrait, ChannelPayloadFilter, SpyneAppProperties, safeClone } from 'spyne';
-import {
-  whereEq,
-  filter,
-  propEq,
-  path,
-  head,
-  prop,
-  defaultTo,
-  compose,
-} from 'ramda';
+
 export class AppTraits extends SpyneTrait {
   constructor(context) {
     let traitPrefix = 'appTraits$';
     super(context, traitPrefix);
   }
 
-  static appTraits$GetnavLinksset(propsObj) {
-    const linkDatasets =
-      SpyneAppProperties.getChannelConfig('ROUTE').routeDatasetsArr;
-    return compose(
-      head,
-      defaultTo([{}]),
-      filter(whereEq(propsObj)),
-    )(linkDatasets);
-  }
 
-  static appTraits$GetAppData() {
-    const onAppDataReturned = (e) => {
+
+  static appTraits$OnDataReturned(e) {
+
       this.props.data = e['CHANNEL_APP_API'].payload;
-      const deepLinkPayload = e['CHANNEL_ROUTE'].payload;
-      this.props.deepLinkPayload = deepLinkPayload;
-      const {navLinks} = deepLinkPayload;
-      const uiText = this.props.data?.text;
-      this.props.uiText = uiText;
-      console.log('APP DATA RETURNED ', e, {deepLinkPayload, uiText});
-      const { routeData } = deepLinkPayload;
+      this.props.uiText = this.props.data?.text;
+      this.props.deepLinkPayload  = e['CHANNEL_ROUTE'].payload;
+
+      const { routeData } = this.props.deepLinkPayload;
 
 
       try {
@@ -42,12 +22,6 @@ export class AppTraits extends SpyneTrait {
       } catch (e) {
         console.log('ERROR FOR ROUTE', e);
       }
-      this.appTraits$SubscribeToRouteChannel();
-    };
-
-    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(
-      onAppDataReturned,
-    );
 
 
     /**
@@ -57,7 +31,16 @@ export class AppTraits extends SpyneTrait {
      * */
 
   }
-  appTraits$SubscribeToRouteChannel() {
+
+
+  static appTraits$OnRouteEvent(e) {
+    const { routeData } = e.payload;
+    this.appTraits$SendDataEvent(routeData);
+  }
+
+  static appTraits$GetChannels(){
+    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(this.appTraits$OnDataReturned.bind(this));
+
     const routePayloadFilter = new ChannelPayloadFilter({
       action: 'CHANNEL_ROUTE_CHANGE_EVENT',
     });
@@ -65,12 +48,12 @@ export class AppTraits extends SpyneTrait {
     this.getChannel('CHANNEL_ROUTE', routePayloadFilter).subscribe(
       this.appTraits$OnRouteEvent.bind(this),
     );
+
+
   }
 
-  static appTraits$OnRouteEvent(e) {
-    const { routeData } = e.payload;
-    this.appTraits$SendDataEvent(routeData);
-  }
+
+
 
   static appTraits$SendDataEvent(routeData, isInitialData = false) {
     const pageData = this.appTraits$GetCurrentPageData(routeData) || {
@@ -95,10 +78,6 @@ export class AppTraits extends SpyneTrait {
   static appTraits$GetCurrentPageData(routeData = {}, data = this.props.data) {
     let { pageId, cardId } = routeData;
 
-    if (pageId === 'app-gen-base-private') {
-      pageId = 'home';
-    }
-
     // 1) Find the top-level item with matching pageId in data.content
     let item = data.content.find((obj) => obj.pageId === pageId);
 
@@ -121,7 +100,4 @@ export class AppTraits extends SpyneTrait {
     return null;
   }
 
-  static appTraits$HelloWorld() {
-    return 'Hello World';
-  }
 }

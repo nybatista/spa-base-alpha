@@ -10,7 +10,7 @@ export class ChannelApp extends Channel {
   }
 
   onRegistered() {
-    this.appTraits$GetAppData();
+    this.appTraits$GetChannels();
   }
 
   addRegisteredActions() {
