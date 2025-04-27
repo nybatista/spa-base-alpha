@@ -10,17 +10,7 @@ export class PageTraits extends SpyneTrait {
     super(context, traitPrefix);
   }
 
-  static pageTraits$AddMainNav(e) {
-    const { navLinks } = e.payload;
-  }
 
-  static pageTraits$onRouteNavEvent(e) {
-    // Use 'home' if no route is specified
-    const { change = 'home' } = e.payload.routeData;
-
-    // Mark the active nav link with .selected class
-    this.props.el$('nav a').setActiveItem('selected', `.link-${change}`);
-  }
 
   static pageTraits$onRouteEvent(e) {
     const { pageId = '404' } = e?.payload;
@@ -60,32 +50,4 @@ export class PageTraits extends SpyneTrait {
     );
   }
 
-  /**
-   * Provides an array of page objects used by pageTraits$GetDataByPageId().
-   * This could be replaced by a dynamic data source or ChannelFetch in a larger app.
-   */
-  static pageTraits$GetPageData() {
-    return [
-      {
-        pageId: 'home',
-        title: 'Home',
-        text: 'Welcome to our starter SpyneJS application! Here you’ll find basic instructions and links to other pages-old.',
-      },
-      {
-        pageId: 'features',
-        title: 'Features',
-        text: 'Learn about our single active page pattern, dark mode styling, and other capabilities.',
-      },
-      {
-        pageId: 'about',
-        title: 'About Us',
-        text: 'We are dedicated to building intuitive single-page applications with SpyneJS. Our team is passionate about modular, maintainable code.',
-      },
-      {
-        pageId: 'contact',
-        title: 'Contact',
-        text: 'Got questions or feedback? Reach out via our contact page or follow us on social media.',
-      },
-    ];
-  }
 }

@@ -1,4 +1,9 @@
-import { SpyneTrait, ChannelPayloadFilter, SpyneAppProperties, safeClone } from 'spyne';
+import {
+  SpyneTrait,
+  ChannelPayloadFilter,
+  SpyneAppProperties,
+  safeClone,
+} from 'spyne';
 
 export class AppTraits extends SpyneTrait {
   constructor(context) {
@@ -6,40 +11,35 @@ export class AppTraits extends SpyneTrait {
     super(context, traitPrefix);
   }
 
-
-
   static appTraits$OnDataReturned(e) {
+    this.props.data = e['CHANNEL_APP_API'].payload;
+    this.props.uiText = this.props.data?.text;
+    this.props.deepLinkPayload = e['CHANNEL_ROUTE'].payload;
 
-      this.props.data = e['CHANNEL_APP_API'].payload;
-      this.props.uiText = this.props.data?.text;
-      this.props.deepLinkPayload  = e['CHANNEL_ROUTE'].payload;
+    const { routeData } = this.props.deepLinkPayload;
 
-      const { routeData } = this.props.deepLinkPayload;
-
-
-      try {
-        this.appTraits$SendDataEvent(routeData, true);
-      } catch (e) {
-        console.log('ERROR FOR ROUTE', e);
-      }
-
+    try {
+      this.appTraits$SendDataEvent(routeData, true);
+    } catch (e) {
+      console.log('ERROR FOR ROUTE', e);
+    }
 
     /**
      * TODO: CHANNEL_APP_STATE, listens to CHANNEL_APP_DATA
      * TODO: payloadFIlter, CHANNEL_ROUTE_CHANGE_EVENT, add 2nd subscribe
      *
      * */
-
   }
-
 
   static appTraits$OnRouteEvent(e) {
     const { routeData } = e.payload;
     this.appTraits$SendDataEvent(routeData);
   }
 
-  static appTraits$GetChannels(){
-    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(this.appTraits$OnDataReturned.bind(this));
+  static appTraits$GetChannels() {
+    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(
+      this.appTraits$OnDataReturned.bind(this),
+    );
 
     const routePayloadFilter = new ChannelPayloadFilter({
       action: 'CHANNEL_ROUTE_CHANGE_EVENT',
@@ -48,12 +48,7 @@ export class AppTraits extends SpyneTrait {
     this.getChannel('CHANNEL_ROUTE', routePayloadFilter).subscribe(
       this.appTraits$OnRouteEvent.bind(this),
     );
-
-
   }
-
-
-
 
   static appTraits$SendDataEvent(routeData, isInitialData = false) {
     const pageData = this.appTraits$GetCurrentPageData(routeData) || {
@@ -63,41 +58,45 @@ export class AppTraits extends SpyneTrait {
       ? 'CHANNEL_APP_INIT_EVENT'
       : 'CHANNEL_APP_DATA_EVENT';
 
-    const { deepLinkPayload, uiText} = this.props;
+    const { deepLinkPayload, uiText } = this.props;
     // const payload = { ...pageData, ...(initialData || {}) };
     const payload = safeClone(pageData);
     payload['uiText'] = uiText;
     payload['deepLinkPayload'] = deepLinkPayload;
 
-    console.log('PAYLOAD PAGE CARD ', { payload, pageData, action, isInitialData });
-    console.log("PAYLOAD PAGE CARD CHANNEL DATA ",this.props.data);
+    console.log('PAYLOAD PAGE CARD ', {
+      payload,
+      pageData,
+      action,
+      isInitialData,
+    });
+    console.log('PAYLOAD PAGE CARD CHANNEL DATA ', this.props.data);
 
     this.sendChannelPayload(action, payload);
   }
 
-  static appTraits$GetCurrentPageData(routeData = {}, data = this.props.data) {
-    let { pageId, cardId } = routeData;
+  static appTraits$GetCurrentPageData(
+    routeData = {},
+    data = this.props.data,
+    keys = ['pageId', 'cardId'],
+  ) {
+    if (!data || !data.content) return null;
 
-    // 1) Find the top-level item with matching pageId in data.content
-    let item = data.content.find((obj) => obj.pageId === pageId);
+    return keys.reduce(
+      (current, key) => {
+        if (!current) return null; // Early exit if not found
 
-    console.log('CHANNAL APP DATA IS ', { item, pageId, cardId, data });
+        const value = routeData[key];
+        if (!value) return current; // If no value for this key, stay at current level
 
-    if (!item) return null; // Not found
+        // Assume nested `content` array at each step
+        if (current.content && Array.isArray(current.content)) {
+          return current.content.find((obj) => obj[key] === value);
+        }
 
-    // 2) If no cardId is specified, return the found item
-    if (!cardId) {
-      return item;
-    }
-
-    // 3) If cardId is specified, return item.content only if it matches
-    //    (adjust logic if your data is nested differently or if content is an array)
-    if (item.content) {
-      return item.content.find((obj) => obj.cardId === cardId);
-    }
-
-    // 4) Otherwise no match
-    return null;
+        return null;
+      },
+      { content: data.content },
+    ); // Start with a fake top-level wrapper
   }
-
 }

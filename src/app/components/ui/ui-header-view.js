@@ -15,17 +15,14 @@ export class UIHeaderView extends ViewStream {
   }
 
   addActionListeners() {
-    return [
-      ['CHANNEL_APP_INIT_EVENT', 'onAppInitEvent']
-    ];
+    return [['CHANNEL_APP_INIT_EVENT', 'onAppInitEvent']];
   }
 
-  onAppInitEvent(e){
-    const {deepLinkPayload, uiText} = e.payload;
-    const {navLinks} = deepLinkPayload;
+  onAppInitEvent(e) {
+    const { deepLinkPayload, uiText } = e.payload;
+    const { navLinks } = deepLinkPayload;
     this.navTraits$AddNavLinks(navLinks);
     this.navTraits$OnAppDataEvent(uiText);
-
   }
 
   broadcastEvents() {

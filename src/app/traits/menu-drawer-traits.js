@@ -1,7 +1,6 @@
 import { SpyneTrait, ViewStream } from 'spyne';
 import MenuDrawerNavTmpl from 'components/ui/templates/ui-menu-drawer-nav.tmpl.html';
 
-
 export class MenuDrawerTraits extends SpyneTrait {
   constructor(context) {
     let traitPrefix = 'menuDrawer$';
@@ -55,6 +54,4 @@ export class MenuDrawerTraits extends SpyneTrait {
     const activeSel = `a.nav[data-page-id='${pageId}'][data-card-id='${cardId}']`;
     this.props.el$('a.nav').setActiveItem('selected', activeSel);
   }
-
-
 }

@@ -2,7 +2,7 @@ import { SpyneApp, SpyneAppProperties, Channel, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import AppContentData from 'data/debug-app-data.json';
 import AppContentDataDebug from 'data/debug-app-data.json';
-import { SpynePluginJSONCms } from "@franciscobatista/spyne-plugin-json-cms";
+import { SpynePluginJSONCms } from '@franciscobatista/spyne-plugin-json-cms';
 
 import { AppView } from './app/app-view.js';
 
@@ -40,7 +40,7 @@ const config1a = {
       mediaQueries: {
         showMenuDrawer: `(max-width: ${hamburgerBreakpoint}px)`,
       },
-      events: ["click", "mouseover", "message"],
+      events: ['click', 'mouseover', 'message'],
       listenForScroll: true,
       listenForOrientation: true,
       debounceMSTimeForScroll: 50,
@@ -52,21 +52,42 @@ const config1a = {
       isHidden: false,
       add404s: true,
       routes: {
-        "routePath": {
-          "routeName": "pageId",
-          "home": "",
-          "about": {
-            "routePath": {
-              "routeName": "cardId",
-              "contact-us": "contact-us"
-            }
-          }
-        }
+        routePath: {
+          routeName: 'pageId',
+          home: '',
+          about: {
+            routePath: {
+              routeName: 'cardId',
+              'contact-us': 'contact-us',
+            },
+          },
+        },
       },
     },
   },
 };
-const config = {"debug":true,"channels":{"ROUTE":{"routes":{"routePath":{"routeName":"pageId","home":"","fun widgets":{"routePath":{"routeName":"cardId","electronic widgets":"electronic widgets","mechanical widges":"mechanical widges"}},"about":{"routePath":{"routeName":"cardId","Team":"Team"}}}}},"WINDOW":{"events":["click","mouseover"]}}};
+const config = {
+  debug: true,
+  channels: {
+    ROUTE: {
+      routes: {
+        routePath: {
+          routeName: 'pageId',
+          home: '',
+          funwidgets: {
+            routePath: {
+              routeName: 'cardId',
+              'electronic widgets': 'electronic widgets',
+              'mechanical widges': 'mechanical widges',
+            },
+          },
+          about: { routePath: { routeName: 'cardId', Team: 'Team' } },
+        },
+      },
+    },
+    WINDOW: { events: ['click', 'mouseover'] },
+  },
+};
 
 if (useDebuggerMode === true) {
   config.channels.ROUTE.routes = spyneJSConfig.channels.ROUTE.routes;
@@ -94,9 +115,9 @@ if (process.env.NODE_ENV === 'development2') {
     maximize: true,
   };
 
-   const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
-   SpyneApp.registerPlugin(spyneCmsPlugin);
-   dataMapper = SpyneApp.pluginsFn.mapCmsData;
+  const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
+  SpyneApp.registerPlugin(spyneCmsPlugin);
+  dataMapper = SpyneApp.pluginsFn.mapCmsData;
 }
 
 SpyneApp.registerChannel(new ChannelMenuDrawer());
@@ -123,7 +144,7 @@ if (useLocalStorage !== true) {
 }
 
 if (process.env.NODE_ENV === 'development') {
-import('./dev-tools.js');
+  import('./dev-tools.js');
 }
 
 if (setOld) {

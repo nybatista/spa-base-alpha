@@ -25,35 +25,39 @@ export class ChannelMenuDrawer extends Channel {
       payload: (p) => p?.routeData?.eventType === 'menuDrawer',
     });
 
-    const appInitFilter =  new ChannelPayloadFilter({
-      action: "CHANNEL_APP_INIT_EVENT"
+    const appInitFilter = new ChannelPayloadFilter({
+      action: 'CHANNEL_APP_INIT_EVENT',
     });
 
+    this.getChannel('CHANNEL_WINDOW', breakPointFilter).subscribe(
+      this.onWindowEvent.bind(this),
+    );
 
-    this.getChannel('CHANNEL_WINDOW', breakPointFilter)
-      .subscribe(this.onWindowEvent.bind(this));
+    this.getChannel('CHANNEL_UI', menuDrawerBtnFilter).subscribe(
+      this.onUiClick.bind(this),
+    );
 
-    this.getChannel('CHANNEL_UI', menuDrawerBtnFilter)
-      .subscribe(this.onUiClick.bind(this));
+    this.getChannel('CHANNEL_ROUTE', menuDrawerRouteFilter).subscribe(
+      this.onUiClick.bind(this),
+    );
 
-    this.getChannel('CHANNEL_ROUTE', menuDrawerRouteFilter)
-      .subscribe(this.onUiClick.bind(this));
-
-    this.getChannel('CHANNEL_APP', appInitFilter)
-      .subscribe(this.onMenuDrawerInit.bind(this));
-
+    this.getChannel('CHANNEL_APP', appInitFilter).subscribe(
+      this.onMenuDrawerInit.bind(this),
+    );
   }
 
-  onMenuDrawerInit(e){
-    const {deepLinkPayload, uiText} = e.payload;
-    const {navLinks, isDeepLink, routeData} = deepLinkPayload;
-    const action = "CHANNEL_MENU_DRAWER_INIT_EVENT";
+  onMenuDrawerInit(e) {
+    const { deepLinkPayload, uiText } = e.payload;
+    const { navLinks, isDeepLink, routeData } = deepLinkPayload;
+    const action = 'CHANNEL_MENU_DRAWER_INIT_EVENT';
 
-      this.sendChannelPayload(action, {navLinks, isDeepLink, routeData, uiText})
-
+    this.sendChannelPayload(action, {
+      navLinks,
+      isDeepLink,
+      routeData,
+      uiText,
+    });
   }
-
-
 
   onUiClick(e) {
     const { isHamburger } = e.payload;
@@ -93,8 +97,8 @@ export class ChannelMenuDrawer extends Channel {
   addRegisteredActions() {
     return [
       'CHANNEL_MENU_DRAWER_INIT_EVENT',
-      'CHANNEL_MENU_DRAWER__SHOW_EVENT', 'CHANNEL_MENU_DRAWER__HIDE_EVENT'];
+      'CHANNEL_MENU_DRAWER__SHOW_EVENT',
+      'CHANNEL_MENU_DRAWER__HIDE_EVENT',
+    ];
   }
-
-
 }

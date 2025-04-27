@@ -6,7 +6,7 @@ export class CardView extends ViewStream {
     props.tagName = 'li';
     props.class = 'card';
     props.data = safeClone(props.data);
-    props.data.imgUrl =  props.data?.img?.src?.medium;
+    props.data.imgUrl = props.data?.img?.src?.medium;
     props.template = CardTmpl;
 
     super(props);

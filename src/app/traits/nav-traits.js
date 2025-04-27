@@ -9,7 +9,7 @@ export class NavTraits extends SpyneTrait {
     super(context, traitPrefix);
   }
 
-  static navTraits$AddNavLinks(navLinks=[]) {
+  static navTraits$AddNavLinks(navLinks = []) {
     //const { navLinks } = e.payload;
 
     // PULL ONLY TOP PAGE LINKS;
