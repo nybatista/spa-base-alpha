@@ -8,8 +8,6 @@ import ESLintPlugin from 'eslint-webpack-plugin';
 
 import  SpyneCmsServerWebpackPlugin  from '../spyne-plugin-json-cms-tmp/spyne-cms-server-webpack-plugin.js';
 
-//const SpyneCmsServerWebpackPlugin = require('@franciscobatista/spyne-plugin-json-cms/spyne-cms-server-webpack-plugin');
-
 
 const _defaultAssetsDirName = 'assets';
 //const port = 8056;

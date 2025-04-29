@@ -1,7 +1,7 @@
 // karma.conf.js
 
 //const webpackConfigFn = require('./webpack.config.js');
-import webpackConfigFn from "./webpack.config.js";
+import webpackConfigFn from './webpack.config.js';
 const webpackConfig = webpackConfigFn();
 webpackConfig.entry = undefined;
 webpackConfig.output = undefined;

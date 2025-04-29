@@ -1,4 +1,4 @@
-import { ViewStream, safeClone } from 'spyne';
+import { ViewStream } from 'spyne';
 import UIHeaderNavTmpl from './templates/ui-header-nav-view.tmpl.html';
 export class UIHeaderNavView extends ViewStream {
   constructor(props = {}) {
@@ -22,8 +22,7 @@ export class UIHeaderNavView extends ViewStream {
     }
 
     const { pageId } = routeData;
-    if (isDeepLink === true) {
-    }
+
     const activeSel = `a.nav[data-page-id='${pageId}']`;
     this.props.el$('a.nav').setActiveItem('selected', activeSel);
   }

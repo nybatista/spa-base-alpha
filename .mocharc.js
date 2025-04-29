@@ -10,5 +10,5 @@ export default {
   recursive: true,
 
   // How long to wait before considering a test as timed out (ms)
-  timeout: 5000
+  timeout: 5000,
 };

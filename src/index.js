@@ -1,4 +1,4 @@
-import { SpyneApp, SpyneAppProperties, Channel, ChannelFetch } from 'spyne';
+import { SpyneApp, Channel, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import AppContentData from 'data/debug-app-data.json';
 import AppContentDataDebug from 'data/debug-app-data.json';
@@ -29,7 +29,6 @@ const ai_gen_appData = JSON.parse(
 const ai_gen_SpyneJSConfig = JSON.parse(
   window.localStorage.getItem('ai_gen_SpyneJSConfig'),
 );
-
 
 const config1a = {
   debug: true,
@@ -101,7 +100,6 @@ const appConfig =
     ? ai_gen_SpyneJSConfig
     : config;
 
-
 SpyneApp.init(appConfig);
 SpyneApp.registerChannel(new ChannelApp());
 
@@ -150,5 +148,3 @@ if (setOld) {
 } else {
   new AppView().prependToDom(document.querySelector('body'));
 }
-
-

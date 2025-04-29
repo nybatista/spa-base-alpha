@@ -159,11 +159,9 @@ export class BreadcrumbTraits extends SpyneTrait {
       isActive,
     });
 
-
     this.props.el$.setClass(breadcrumbClass);
 
     const updateLink = () => {
-
       if (navLink === undefined) {
         return;
       }

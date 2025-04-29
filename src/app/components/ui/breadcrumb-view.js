@@ -12,7 +12,7 @@ export class BreadcrumbView extends ViewStream {
   }
 
   addActionListeners() {
-    return [['CHANNEL_ROUTE_CHANGE_EVENT', 'breadcrumb$UpdateLink']];
+    return [['CHANNEL_ROUTE_.*_EVENT', 'breadcrumb$UpdateLink']];
   }
 
   broadcastEvents() {

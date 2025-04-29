@@ -1,5 +1,4 @@
 import { ViewStream } from 'spyne';
-import { PageTraits } from 'traits/page-traits.js';
 import { NavTraits } from 'traits/nav-traits.js';
 import UIHeaderTmpl from './templates/ui-header-view.tmpl.html';
 import { UIHeaderHamburgerView } from 'components/ui/ui-header-hamburger-view.js';

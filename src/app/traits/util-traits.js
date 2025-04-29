@@ -65,11 +65,10 @@ export class UtilTraits extends SpyneTrait {
     return expandCard(pageId, cardId);
   }
 
-  static util$GetOffsetTop(props = this.props) {
+  static util$GetOffsetTop() {
     const pageContentEl = document.querySelector('.app-page .page-content');
     const pageContentTop = pageContentEl.offsetTop;
-    const top = this.props.el.offsetTop + pageContentTop + 16 * 8;
-    return top;
+    return this.props.el.offsetTop + pageContentTop + 16 * 8;
   }
 
   static util$SetRootVal(key, val) {

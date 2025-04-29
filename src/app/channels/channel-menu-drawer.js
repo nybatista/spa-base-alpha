@@ -1,4 +1,4 @@
-import { path, pathEq } from 'ramda';
+import { path } from 'ramda';
 import { Channel, ChannelPayloadFilter } from 'spyne';
 
 export class ChannelMenuDrawer extends Channel {
@@ -48,13 +48,13 @@ export class ChannelMenuDrawer extends Channel {
 
   onMenuDrawerInit(e) {
     const { initData } = e.payload;
-    const { navLinks, isDeepLink, routeData } = initData;
+    const { isDeepLink, routeData } = initData;
     const action = 'CHANNEL_MENU_DRAWER_INIT_EVENT';
 
     this.sendChannelPayload(action, {
       initData,
       isDeepLink,
-      routeData
+      routeData,
     });
   }
 

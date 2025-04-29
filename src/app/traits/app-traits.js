@@ -1,9 +1,4 @@
-import {
-  SpyneTrait,
-  ChannelPayloadFilter,
-  SpyneAppProperties,
-  safeClone,
-} from 'spyne';
+import { SpyneTrait, ChannelPayloadFilter, safeClone } from 'spyne';
 
 export class AppTraits extends SpyneTrait {
   constructor(context) {
@@ -15,10 +10,9 @@ export class AppTraits extends SpyneTrait {
     this.props.data = e['CHANNEL_APP_API'].payload;
     this.props.uiText = this.props.data?.text;
 
-    const {navLinks, isDeepLink, routeData} = e['CHANNEL_ROUTE'].payload;
-    const {footer, header} = e['CHANNEL_APP_API'].payload.text;
-    this.props.initData = {navLinks, isDeepLink, routeData, footer, header};
-
+    const { navLinks, isDeepLink, routeData } = e['CHANNEL_ROUTE'].payload;
+    const { footer, header } = e['CHANNEL_APP_API'].payload.text;
+    this.props.initData = { navLinks, isDeepLink, routeData, footer, header };
 
     try {
       this.appTraits$SendDataEvent(routeData, true);
@@ -63,7 +57,6 @@ export class AppTraits extends SpyneTrait {
     const { initData } = this.props;
     const payload = safeClone(pageData);
     payload['initData'] = initData;
-
 
     this.sendChannelPayload(action, payload);
   }

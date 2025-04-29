@@ -1,4 +1,4 @@
-import { ViewStream, DomElement, safeClone } from 'spyne';
+import { ViewStream, safeClone } from 'spyne';
 import CardTmpl from './templates/card.tmpl.html';
 
 export class CardView extends ViewStream {

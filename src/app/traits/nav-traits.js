@@ -1,6 +1,5 @@
-import { SpyneTrait, ViewStream } from 'spyne';
+import { SpyneTrait } from 'spyne';
 import { UIHeaderNavView } from 'components/ui/ui-header-nav-view.js';
-import { UIMenuDrawerView } from 'components/ui/ui-menu-drawer-view.js';
 
 export class NavTraits extends SpyneTrait {
   constructor(context) {
@@ -17,11 +16,8 @@ export class NavTraits extends SpyneTrait {
     this.appendView(new UIHeaderNavView({ data }), '.header-content');
   }
 
-  static navTraits$OnAppDataEvent(logoTxt="") {
-
+  static navTraits$OnAppDataEvent(logoTxt = '') {
     this.props.el$('.branding h1 a').el.innerText = logoTxt;
-
-
   }
 
   static navTraits$onRouteNavEvent(e) {

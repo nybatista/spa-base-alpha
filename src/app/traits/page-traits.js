@@ -1,7 +1,6 @@
-import { SpyneTrait, DomElementTemplate } from 'spyne';
+import { SpyneTrait } from 'spyne';
 import { PageView } from 'components/pages/page-view.js';
 import { CardView } from 'components/cards/card-view.js';
-import CardTmpl from '../components/cards/templates/card.tmpl.html';
 import { Page404View } from 'components/pages/page-404-view.js';
 
 export class PageTraits extends SpyneTrait {
@@ -9,8 +8,6 @@ export class PageTraits extends SpyneTrait {
     let traitPrefix = 'pageTraits$';
     super(context, traitPrefix);
   }
-
-
 
   static pageTraits$onRouteEvent(e) {
     const { pageId = '404' } = e?.payload;
@@ -48,5 +45,4 @@ export class PageTraits extends SpyneTrait {
       this.props.data[0]
     );
   }
-
 }
