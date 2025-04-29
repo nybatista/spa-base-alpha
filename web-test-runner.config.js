@@ -3,6 +3,7 @@ import { junitReporter } from '@web/test-runner-junit-reporter';
 
 export default {
   files: ['src/tests/unit-tests/**/*.test.js'],
+  nodeResolve: true,
 
   testFramework: {
     config: {
@@ -11,7 +12,6 @@ export default {
     },
   },
 
-  nodeResolve: true,
 
   reporters: [
     defaultReporter({

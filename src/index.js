@@ -2,7 +2,7 @@ import { SpyneApp, Channel, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import AppContentData from 'data/debug-app-data.json';
 import AppContentDataDebug from 'data/debug-app-data.json';
-import { SpynePluginJSONCms } from '@franciscobatista/spyne-plugin-json-cms';
+//import { SpynePluginJSONCms } from '@franciscobatista/spyne-plugin-json-cms';
 
 import { AppView } from './app/app-view.js';
 
@@ -10,7 +10,6 @@ import * as R from 'ramda';
 window.R = R;
 
 const setOld = false;
-//import './scss/main-old.scss';
 import './scss/main.scss';
 import { ChannelApp } from 'channels/channel-app.js';
 const hamburgerBreakpoint = 768;
@@ -111,9 +110,9 @@ if (process.env.NODE_ENV === 'development2') {
     maximize: true,
   };
 
-  const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
-  SpyneApp.registerPlugin(spyneCmsPlugin);
-  dataMapper = SpyneApp.pluginsFn.mapCmsData;
+ // const spyneCmsPlugin = new SpynePluginJSONCms(cmsPluginConfig);
+ // SpyneApp.registerPlugin(spyneCmsPlugin);
+ // dataMapper = SpyneApp.pluginsFn.mapCmsData;
 }
 
 SpyneApp.registerChannel(new ChannelMenuDrawer());

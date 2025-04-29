@@ -17,14 +17,13 @@
     "cycleImages": "node ./repo-scripts/cycle-images.js",
     "cycleBizImages": "node ./repo-scripts/cycle-business-imgs.js",
     "lint:fix": "eslint --config eslint.config.js --fix",
-    "migrate-sass": "sass-migrator module --migrate-deps src/scss/main-old.scss",
     "format": "prettier --write 'src/**/*.{js,css,scss,html}'"
   },
   "dependencies": {
     "dompurify": "^3.2.4",
     "ramda": "^0.30.1",
     "rxjs": "^7.8.1",
-    "spyne": "^0.20.5"
+    "spyne": "^0.20.7"
   },
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4-fix.0",

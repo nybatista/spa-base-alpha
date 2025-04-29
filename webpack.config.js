@@ -6,9 +6,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
 
-import  SpyneCmsServerWebpackPlugin  from '../spyne-plugin-json-cms-tmp/spyne-cms-server-webpack-plugin.js';
-
-
 const _defaultAssetsDirName = 'assets';
 //const port = 8056;
 
@@ -204,12 +201,6 @@ function getWebpackPlugins() {
       filename: `${_assetsFolder}css/main.css`,
     });
 
-  const spyneCmsServerPlugin = ()=>{
-
-    return new SpyneCmsServerWebpackPlugin('localhost', 3012);
-
-  }
-
   const getCopyPatternsPlugin = () => {
     const patterns = [
       { from: './src/static/imgs', to: `${_assetsFolder}static/imgs` },
@@ -241,7 +232,7 @@ function getWebpackPlugins() {
       getCopyPatternsPlugin()
     ];
   } else if (_testMode === false) {
-    return [htmlPlugin, definePlugin, spyneCmsServerPlugin()];
+    return [htmlPlugin, definePlugin];
   } else {
     return [htmlPlugin, definePlugin];
   }

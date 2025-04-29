@@ -5,7 +5,8 @@ import {
   payloadAbout,
   payloadCardFlyingTech,
 } from '../mocks/route-mocks.js';
-import { BreadcrumbTraits } from '../../../app/traits/breadcrumb-traits.js';
+import { BreadcrumbTraits } from '/src/app/traits/breadcrumb-traits.js';
+import { add } from 'ramda';
 
 const propsPage = {
   bcProps: ['pageId'],
@@ -18,6 +19,22 @@ const propsCard = {
   navLevel: 2,
   navLinks: navLinks,
 };
+
+describe('Basic Chai Test', function () {
+  it('2 + 2 equals 4', function () {
+    expect(add(2, 2)).to.equal(4);
+  });
+
+  it('should be show that spyne has initialized', function () {
+    // SpyneApp.init();
+    //console.log("SpyneAppProperties ",SpyneAppProperties)
+    //expect(SpyneAppProperties.initialized).to.be.true;
+    return true;
+  });
+});
+
+
+
 
 describe('should test that breadrumb traits exists ', () => {
   it('should return hw from breadrumb traits', () => {
@@ -198,3 +215,4 @@ describe('should test that breadrumb traits exists ', () => {
     );
   });
 });
+

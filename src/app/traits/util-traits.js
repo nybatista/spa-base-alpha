@@ -71,16 +71,6 @@ export class UtilTraits extends SpyneTrait {
     return this.props.el.offsetTop + pageContentTop + 16 * 8;
   }
 
-  static util$SetRootVal(key, val) {
-    document.documentElement.style.setProperty(key, val);
-  }
-
-  static util$GetRootVal(rootKey) {
-    return getComputedStyle(document.documentElement).getPropertyValue(
-      'rootKey',
-    );
-  }
-
   static util$GetTemplate(name, filesArr) {
     const cache = {};
     const importAll = (r) => r.keys().forEach((key) => (cache[key] = r(key)));

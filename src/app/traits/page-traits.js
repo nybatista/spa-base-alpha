@@ -17,32 +17,18 @@ export class PageTraits extends SpyneTrait {
     };
 
     const PageClass = pageLookupTable[pageId] || PageView;
-
-    //const { change = 'home' } = e.payload.routeData;
-
-    // const data = this.pageTraits$GetDataByPageId(change);
     const data = e.payload;
+
     // Append a new PageView in the .stage-view area,
     this.appendView(new PageClass({ data }), '.page-container');
   }
 
   static pageTraits$AddCards() {
     const addCard = (data) => {
-      // const card = new CardView({data});
-      // const card = new DomElementTemplate(CardTmpl, data);
-      // this.props.el$('.cards-container').el.appendChild(card.renderDocFrag());
       this.appendView(new CardView({ data }), '.cards-container');
     };
     this.props.data.content.forEach(addCard);
   }
 
-  /**
-   * Looks up the page object by its pageId.
-   */
-  static pageTraits$GetDataByPageId(pageId = 'home') {
-    return (
-      this.props.data.find((page) => page.pageId === pageId) ||
-      this.props.data[0]
-    );
-  }
+
 }

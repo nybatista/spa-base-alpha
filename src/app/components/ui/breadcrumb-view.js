@@ -1,5 +1,5 @@
 import { ViewStream } from 'spyne';
-import { BreadcrumbTraits } from 'traits/breadcrumb-traits.js';
+import { BreadcrumbTraits } from '../../traits/breadcrumb-traits.js';
 import BreadcrumbTmpl from './templates/breadcrumb-view.tmpl.html';
 export class BreadcrumbView extends ViewStream {
   constructor(props = {}) {
