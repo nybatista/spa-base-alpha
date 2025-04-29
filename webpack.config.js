@@ -207,7 +207,6 @@ function getWebpackPlugins() {
     });
 
   const spyneCmsServerPlugin = ()=>{
-    console.log("CMS SERVER PLUGIN ")
 
     return new SpyneCmsServerWebpackPlugin('localhost', 3012);
 

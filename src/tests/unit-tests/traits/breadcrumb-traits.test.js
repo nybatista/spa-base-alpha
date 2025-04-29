@@ -29,7 +29,6 @@ describe('should test that breadrumb traits exists ', () => {
     const breadcrumbObjs =
       BreadcrumbTraits.breadcrumb$getBreadcrumbObjs(navLinks);
 
-    console.log('bc objs ', breadcrumbObjs);
   });
 
   it('should find home visible states', () => {

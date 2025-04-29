@@ -14,9 +14,11 @@ export class AppTraits extends SpyneTrait {
   static appTraits$OnDataReturned(e) {
     this.props.data = e['CHANNEL_APP_API'].payload;
     this.props.uiText = this.props.data?.text;
-    this.props.deepLinkPayload = e['CHANNEL_ROUTE'].payload;
 
-    const { routeData } = this.props.deepLinkPayload;
+    const {navLinks, isDeepLink, routeData} = e['CHANNEL_ROUTE'].payload;
+    const {footer, header} = e['CHANNEL_APP_API'].payload.text;
+    this.props.initData = {navLinks, isDeepLink, routeData, footer, header};
+
 
     try {
       this.appTraits$SendDataEvent(routeData, true);
@@ -58,19 +60,10 @@ export class AppTraits extends SpyneTrait {
       ? 'CHANNEL_APP_INIT_EVENT'
       : 'CHANNEL_APP_DATA_EVENT';
 
-    const { deepLinkPayload, uiText } = this.props;
-    // const payload = { ...pageData, ...(initialData || {}) };
+    const { initData } = this.props;
     const payload = safeClone(pageData);
-    payload['uiText'] = uiText;
-    payload['deepLinkPayload'] = deepLinkPayload;
+    payload['initData'] = initData;
 
-    console.log('PAYLOAD PAGE CARD ', {
-      payload,
-      pageData,
-      action,
-      isInitialData,
-    });
-    console.log('PAYLOAD PAGE CARD CHANNEL DATA ', this.props.data);
 
     this.sendChannelPayload(action, payload);
   }

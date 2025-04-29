@@ -8,22 +8,17 @@ export class MenuDrawerTraits extends SpyneTrait {
   }
 
   static menuDrawer$addContent(e) {
-    const { payload } = e;
-    const { navLinks, uiText } = payload;
-
-    const data = navLinks;
-
-    console.log('LINKS DATA IS ', { data, uiText, payload, e });
+    const { navLinks, header } = e.payload.initData;
 
     this.appendView(
       new ViewStream({
         id: 'menu-drawer-content',
         tagName: 'nav',
-        data,
+        data: navLinks,
         template: MenuDrawerNavTmpl,
       }),
     );
-    this.props.el$('.site-title-text').el.innerText = uiText.header;
+    this.props.el$('.site-title-text').el.innerText = header;
     this.menuDrawer$SetActiveLink(e);
   }
 
@@ -36,7 +31,6 @@ export class MenuDrawerTraits extends SpyneTrait {
   static menuDrawer$onShowMenuDrawerEvent(e) {
     const { action } = e;
     const showDrawer = action === 'CHANNEL_MENU_DRAWER__SHOW_EVENT';
-    console.log('SHOW DRAWER ', showDrawer);
     this.props.el$.toggleClass('open', showDrawer);
     this.menuDrawer$SetActiveLink(e);
     this.menuDrawer$HideNav(!showDrawer);

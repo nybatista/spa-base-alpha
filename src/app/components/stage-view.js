@@ -19,7 +19,7 @@ export class StageView extends ViewStream {
   }
 
   onAppInitEvent(e) {
-    const payload = e.payload.deepLinkPayload;
+    const payload = e.payload.initData;
     this.breadcrumb$initBreadcrumbs({ payload });
     this.pageTraits$onRouteEvent(e);
   }

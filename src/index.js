@@ -153,8 +153,4 @@ if (setOld) {
   new AppView().prependToDom(document.querySelector('body'));
 }
 
-const tester = () => {
-  console.log('SpyneAppProperties ', SpyneAppProperties.navLinks);
-};
 
-//window.setTimeout(tester, 1000);

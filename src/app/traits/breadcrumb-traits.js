@@ -50,7 +50,6 @@ export class BreadcrumbTraits extends SpyneTrait {
     const { navLinks, routeData } = e.payload;
 
     const breacrumbObjs = this.breadcrumb$getBreadcrumbObjs(navLinks);
-    console.log('ROUTE DATA ', { navLinks, routeData, e });
     const addBreadcrumbs = (bcObj) => {
       const { bcProps, navLevel } = bcObj;
       this.appendView(
@@ -131,7 +130,6 @@ export class BreadcrumbTraits extends SpyneTrait {
 
   static breadcrumb$FindNavLink(filterData, navLinks = this.props.navLinks) {
     const { bcProps, bcValues, navLevel } = filterData;
-    console.log('FILTER ', { bcProps, bcValues, navLevel });
     return navLinks.find((link) => {
       if (link.navLevel !== navLevel) return false;
       // All bcProps must match the corresponding bcValues for this link
@@ -160,19 +158,11 @@ export class BreadcrumbTraits extends SpyneTrait {
       isVisible,
       isActive,
     });
-    console.log('BC IS ', {
-      bcState,
-      payload,
-      navLink,
-      isVisible,
-      isActive,
-      breadcrumbClass,
-    });
+
 
     this.props.el$.setClass(breadcrumbClass);
 
     const updateLink = () => {
-      console.log('nav link data ', { bcProps, navLink });
 
       if (navLink === undefined) {
         return;

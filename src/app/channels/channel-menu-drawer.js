@@ -47,15 +47,14 @@ export class ChannelMenuDrawer extends Channel {
   }
 
   onMenuDrawerInit(e) {
-    const { deepLinkPayload, uiText } = e.payload;
-    const { navLinks, isDeepLink, routeData } = deepLinkPayload;
+    const { initData } = e.payload;
+    const { navLinks, isDeepLink, routeData } = initData;
     const action = 'CHANNEL_MENU_DRAWER_INIT_EVENT';
 
     this.sendChannelPayload(action, {
-      navLinks,
+      initData,
       isDeepLink,
-      routeData,
-      uiText,
+      routeData
     });
   }
 

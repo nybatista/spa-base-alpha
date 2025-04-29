@@ -19,10 +19,10 @@ export class UIHeaderView extends ViewStream {
   }
 
   onAppInitEvent(e) {
-    const { deepLinkPayload, uiText } = e.payload;
-    const { navLinks } = deepLinkPayload;
+    const { initData } = e.payload;
+    const { navLinks, header } = initData;
     this.navTraits$AddNavLinks(navLinks);
-    this.navTraits$OnAppDataEvent(uiText);
+    this.navTraits$OnAppDataEvent(header);
   }
 
   broadcastEvents() {

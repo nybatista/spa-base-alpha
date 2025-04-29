@@ -17,19 +17,11 @@ export class NavTraits extends SpyneTrait {
     this.appendView(new UIHeaderNavView({ data }), '.header-content');
   }
 
-  static navTraits$OnAppDataEvent(uiText) {
-    const logoTxt = uiText?.header || 'logoText';
+  static navTraits$OnAppDataEvent(logoTxt="") {
 
     this.props.el$('.branding h1 a').el.innerText = logoTxt;
 
-    /*    this.appendView(
-      new ViewStream({
-        data: e.payload,
-        class: 'site-title',
-        template: '<h1>{{text.header}}</h1>',
-      }),
-      '.branding',
-    );*/
+
   }
 
   static navTraits$onRouteNavEvent(e) {

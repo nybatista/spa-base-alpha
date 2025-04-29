@@ -19,7 +19,7 @@ export class UIFooterView extends ViewStream {
       new ViewStream({
         data: e.payload,
         class: 'footer-content',
-        template: '<p>{{uiText.footer}}</p>',
+        template: '<p>{{initData.footer}}</p>',
       }),
     );
   }
