@@ -1,5 +1,5 @@
 import { SpyneTrait } from 'spyne';
-import { BreadcrumbView } from '../components/ui/breadcrumb-view.js';
+import { BreadcrumbView } from 'components/ui/breadcrumb-view.js';
 
 export class BreadcrumbTraits extends SpyneTrait {
   constructor(context) {

@@ -20,21 +20,6 @@ const propsCard = {
   navLinks: navLinks,
 };
 
-describe('Basic Chai Test', function () {
-  it('2 + 2 equals 4', function () {
-    expect(add(2, 2)).to.equal(4);
-  });
-
-  it('should be show that spyne has initialized', function () {
-    // SpyneApp.init();
-    //console.log("SpyneAppProperties ",SpyneAppProperties)
-    //expect(SpyneAppProperties.initialized).to.be.true;
-    return true;
-  });
-});
-
-
-
 
 describe('should test that breadrumb traits exists ', () => {
   it('should return hw from breadrumb traits', () => {
@@ -207,11 +192,11 @@ describe('should test that breadrumb traits exists ', () => {
       });
 
     expect(isHiddenBC).to.eq(
-      'breadcrumb-link breadcrumb-link--hidden breadcrumb-link--inactive',
+      'breadcrumb-item breadcrumb-item--hidden breadcrumb-item--inactive',
     );
-    expect(isVisibleBC).to.eq('breadcrumb-link breadcrumb-link--inactive');
+    expect(isVisibleBC).to.eq('breadcrumb-item breadcrumb-item--inactive');
     expect(isVisibleAndActiveBC).to.eq(
-      'breadcrumb-link breadcrumb-link--active',
+      'breadcrumb-item breadcrumb-item--active',
     );
   });
 });

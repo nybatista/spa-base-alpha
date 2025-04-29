@@ -4,6 +4,9 @@ import { junitReporter } from '@web/test-runner-junit-reporter';
 export default {
   files: ['src/tests/unit-tests/**/*.test.js'],
   nodeResolve: true,
+  alias: {
+    components: '/src/app/components',
+  },
 
   testFramework: {
     config: {
