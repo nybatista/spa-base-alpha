@@ -20,7 +20,6 @@ export class BreadcrumbView extends ViewStream {
   }
 
   onRendered() {
-    console.log('R DATA ', this.props);
     this.props.link$ = this.props.el$('a');
     this.props.linkData = this.props.link$.el.dataset;
 

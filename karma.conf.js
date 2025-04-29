@@ -2,7 +2,6 @@
 
 //const webpackConfigFn = require('./webpack.config.js');
 import webpackConfigFn from "./webpack.config.js";
-console.log("CONFIG FN IS ",webpackConfigFn);
 const webpackConfig = webpackConfigFn();
 webpackConfig.entry = undefined;
 webpackConfig.output = undefined;

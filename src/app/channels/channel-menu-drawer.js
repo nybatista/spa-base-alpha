@@ -64,12 +64,6 @@ export class ChannelMenuDrawer extends Channel {
     const isHamburgerBtn = isHamburger === 'true';
     const showBurgerBool = checkBurgerClassFn?.contains('open') === false;
 
-    console.log('MENU DRAWER ', {
-      isHamburger,
-      isHamburgerBtn,
-      showBurgerBool,
-      e,
-    });
     if (isHamburgerBtn === true) {
       this.sendMenuDrawerEvent(showBurgerBool);
     } else {

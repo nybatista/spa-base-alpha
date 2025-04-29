@@ -30,7 +30,6 @@ const ai_gen_SpyneJSConfig = JSON.parse(
   window.localStorage.getItem('ai_gen_SpyneJSConfig'),
 );
 
-console.log('ITEMS ', { ai_gen_appData, ai_gen_SpyneJSConfig });
 
 const config1a = {
   debug: true,
@@ -102,7 +101,6 @@ const appConfig =
     ? ai_gen_SpyneJSConfig
     : config;
 
-console.log('APP CONFIG ', appConfig);
 
 SpyneApp.init(appConfig);
 SpyneApp.registerChannel(new ChannelApp());

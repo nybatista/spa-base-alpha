@@ -7,7 +7,6 @@ export class UIHeaderNavView extends ViewStream {
     props['aria-label'] = 'Main Navigation';
     props.template = UIHeaderNavTmpl;
     props.channels = ['CHANNEL_ROUTE'];
-    console.log('DATA NAV ', props.data);
     super(props);
   }
 
