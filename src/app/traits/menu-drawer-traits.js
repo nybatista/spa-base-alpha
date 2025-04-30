@@ -37,14 +37,12 @@ export class MenuDrawerTraits extends SpyneTrait {
   }
 
   static menuDrawer$SetActiveLink(e) {
-    const { isDeepLink, routeData } = e.payload;
+    const { routeData } = e.payload;
     if (routeData === undefined) {
       return;
     }
 
     const { pageId, cardId = '' } = routeData;
-    if (isDeepLink === true) {
-    }
     const activeSel = `a.nav[data-page-id='${pageId}'][data-card-id='${cardId}']`;
     this.props.el$('a.nav').setActiveItem('selected', activeSel);
   }

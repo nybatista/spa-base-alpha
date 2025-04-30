@@ -4,7 +4,6 @@ import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-import ESLintPlugin from 'eslint-webpack-plugin';
 
 const _defaultAssetsDirName = 'assets';
 //const port = 8056;
@@ -218,19 +217,8 @@ function getWebpackPlugins() {
     return new CopyWebpackPlugin({ patterns });
   };
 
-  const eslintPlugin = new ESLintPlugin({
-    extensions: ['js'],
-    fix: false,
-    emitWarning: true,
-  });
-
   if (_isProduction) {
-    return [
-      htmlPlugin,
-      definePlugin,
-      miniCssPlugin(),
-      getCopyPatternsPlugin()
-    ];
+    return [htmlPlugin, definePlugin, miniCssPlugin(), getCopyPatternsPlugin()];
   } else if (_testMode === false) {
     return [htmlPlugin, definePlugin];
   } else {

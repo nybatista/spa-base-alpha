@@ -1,6 +1,6 @@
 import './scss/main.scss';
 
-import { SpyneApp, Channel, ChannelFetch } from 'spyne';
+import { SpyneApp, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import { AppView } from './app/app-view.js';
 import { ChannelApp } from 'channels/channel-app.js';

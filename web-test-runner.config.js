@@ -14,8 +14,6 @@ export default {
       timeout: 2000,
     },
   },
-
-
   reporters: [
     defaultReporter({
       // Turn on test result reporting in the console

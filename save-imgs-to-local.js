@@ -35,7 +35,6 @@ try {
   process.exit(1);
 }
 
-
 function getFileNameFromUrl(imgUrl) {
   try {
     const urlObj = new URL(imgUrl);
@@ -51,12 +50,11 @@ function getFileNameFromUrl(imgUrl) {
 
     return fileName;
   } catch (err) {
+    console.log('img tool error', err);
     // If parsing fails or the URL is invalid, fallback to something safe:
     return `image-${Date.now()}.jpg`;
   }
 }
-
-
 
 /**
  * Recursively walk the nested content arrays.
@@ -66,8 +64,6 @@ async function walkContentArray(contentArr) {
   if (!Array.isArray(contentArr)) return;
 
   for (const item of contentArr) {
-    console.log("ITEM IS ",item);
-
     if (item?.img?.imgUrl) {
       // 2a) fetch the image
       const newUrl = await fetchAndSave(item.img.imgUrl);
@@ -137,7 +133,7 @@ async function main() {
 }
 
 // Run
-main().catch(err => {
-  console.error("Unexpected error:", err);
+main().catch((err) => {
+  console.error('Unexpected error:', err);
   process.exit(1);
 });

@@ -46,7 +46,7 @@ export class BreadcrumbTraits extends SpyneTrait {
     return Array.from(bcMap.values()).sort((a, b) => a.navLevel - b.navLevel);
   }
 
-  static breadcrumb$initBreadcrumbs(e, props = this.props) {
+  static breadcrumb$initBreadcrumbs(e) {
     const { navLinks, routeData } = e.payload;
 
     const breacrumbObjs = this.breadcrumb$getBreadcrumbObjs(navLinks);
@@ -150,10 +150,10 @@ export class BreadcrumbTraits extends SpyneTrait {
       .join(' ');
   }
 
-  static breadcrumb$UpdateLink(e, props = this.prop) {
+  static breadcrumb$UpdateLink(e) {
     const { payload } = e;
     const bcState = this.breadcrumb$GetState(payload);
-    const { isVisible, isActive, navLink, bcProps, bcValues } = bcState;
+    const { isVisible, isActive, navLink, bcProps } = bcState;
     const breadcrumbClass = this.breadcrumb$getBreadcrumbLinkClass({
       isVisible,
       isActive,

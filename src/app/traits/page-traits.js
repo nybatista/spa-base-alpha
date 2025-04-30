@@ -10,7 +10,7 @@ export class PageTraits extends SpyneTrait {
   }
 
   static pageTraits$onRouteEvent(e) {
-    const { pageId = '404' } = e?.payload;
+    const { pageId = '404' } = e.payload;
 
     const pageLookupTable = {
       404: Page404View,

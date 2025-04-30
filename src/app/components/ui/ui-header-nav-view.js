@@ -16,7 +16,7 @@ export class UIHeaderNavView extends ViewStream {
   }
 
   onRouteChangeEvent(e) {
-    const { isDeepLink, routeData } = e.payload;
+    const { routeData } = e.payload;
     if (routeData === undefined) {
       return;
     }
