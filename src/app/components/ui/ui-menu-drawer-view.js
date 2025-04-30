@@ -7,7 +7,7 @@ export class UIMenuDrawerView extends ViewStream {
     props.id = 'menu-drawer';
     props.class = 'menu-drawer hide';
     props.traits = [MenuDrawerTraits];
-    props.channels = ['CHANNEL_ROUTE', 'CHANNEL_MENU_DRAWER', 'CHANNEL_APP'];
+    props.channels = ['CHANNEL_ROUTE', 'CHANNEL_MENU_DRAWER', 'CHANNEL_APP_CONTEXT'];
     props.template = MenuDrawerTmpl;
     super(props);
   }

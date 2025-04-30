@@ -6,15 +6,15 @@ export class StageView extends ViewStream {
   constructor(props = {}) {
     props.id = 'stage-view';
     props.traits = [PageTraits, BreadcrumbTraits];
-    props.channels = ['CHANNEL_APP', 'CHANNEL_ROUTE'];
+    props.channels = ['CHANNEL_APP_CONTEXT', 'CHANNEL_ROUTE'];
     props.template = `<nav class='breadcrumbs' aria-label='breadcrumb'><ol class="breadcrumbs-list"></ol></nav><div class='page-container'></div>`;
     super(props);
   }
 
   addActionListeners() {
     return [
-      ['CHANNEL_APP_INIT_EVENT', 'onAppInitEvent'],
-      ['CHANNEL_APP_DATA_EVENT', 'pageTraits$onRouteEvent'],
+      ['CHANNEL_APP_CONTEXT_INIT_EVENT', 'onAppInitEvent'],
+      ['CHANNEL_APP_CONTEXT_DATA_EVENT', 'pageTraits$onRouteEvent'],
     ];
   }
 

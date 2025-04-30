@@ -26,7 +26,7 @@ export class ChannelMenuDrawer extends Channel {
     });
 
     const appInitFilter = new ChannelPayloadFilter({
-      action: 'CHANNEL_APP_INIT_EVENT',
+      action: 'CHANNEL_APP_CONTEXT_INIT_EVENT',
     });
 
     this.getChannel('CHANNEL_WINDOW', breakPointFilter).subscribe(
@@ -41,7 +41,7 @@ export class ChannelMenuDrawer extends Channel {
       this.onUiClick.bind(this),
     );
 
-    this.getChannel('CHANNEL_APP', appInitFilter).subscribe(
+    this.getChannel('CHANNEL_APP_CONTEXT', appInitFilter).subscribe(
       this.onMenuDrawerInit.bind(this),
     );
   }

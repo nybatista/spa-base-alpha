@@ -7,11 +7,11 @@ export class AppTraits extends SpyneTrait {
   }
 
   static appTraits$OnDataReturned(e) {
-    this.props.data = e['CHANNEL_APP_API'].payload;
+    this.props.data = e['CHANNEL_APP_DATA'].payload;
     this.props.uiText = this.props.data?.text;
 
     const { navLinks, isDeepLink, routeData } = e['CHANNEL_ROUTE'].payload;
-    const { footer, header } = e['CHANNEL_APP_API'].payload.text;
+    const { footer, header } = e['CHANNEL_APP_DATA'].payload.text;
     this.props.initData = { navLinks, isDeepLink, routeData, footer, header };
 
     try {
@@ -20,11 +20,6 @@ export class AppTraits extends SpyneTrait {
       console.log('ERROR FOR ROUTE', e);
     }
 
-    /**
-     * TODO: CHANNEL_APP_STATE, listens to CHANNEL_APP_DATA
-     * TODO: payloadFIlter, CHANNEL_ROUTE_CHANGE_EVENT, add 2nd subscribe
-     *
-     * */
   }
 
   static appTraits$OnRouteEvent(e) {
@@ -33,7 +28,7 @@ export class AppTraits extends SpyneTrait {
   }
 
   static appTraits$GetChannels() {
-    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_API']).subscribe(
+    this.mergeChannels(['CHANNEL_ROUTE', 'CHANNEL_APP_DATA']).subscribe(
       this.appTraits$OnDataReturned.bind(this),
     );
 
@@ -51,8 +46,8 @@ export class AppTraits extends SpyneTrait {
       pageId: '404',
     };
     const action = isInitialData
-      ? 'CHANNEL_APP_INIT_EVENT'
-      : 'CHANNEL_APP_DATA_EVENT';
+      ? 'CHANNEL_APP_CONTEXT_INIT_EVENT'
+      : 'CHANNEL_APP_CONTEXT_DATA_EVENT';
 
     const { initData } = this.props;
     const payload = safeClone(pageData);

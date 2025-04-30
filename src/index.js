@@ -3,7 +3,7 @@ import './scss/main.scss';
 import { SpyneApp, ChannelFetch } from 'spyne';
 import { ChannelMenuDrawer } from 'channels/channel-menu-drawer';
 import { AppView } from './app/app-view.js';
-import { ChannelApp } from 'channels/channel-app.js';
+import { ChannelAppContext } from 'channels/channel-app-context.js';
 import AppContentData from 'data/app-data.json';
 
 const config = {
@@ -42,12 +42,12 @@ const config = {
 };
 
 SpyneApp.init(config);
-SpyneApp.registerChannel(new ChannelApp());
+SpyneApp.registerChannel(new ChannelAppContext());
 
 SpyneApp.registerChannel(new ChannelMenuDrawer());
 
 SpyneApp.registerChannel(
-  new ChannelFetch('CHANNEL_APP_API', {
+  new ChannelFetch('CHANNEL_APP_DATA', {
     url: AppContentData,
   }),
 );

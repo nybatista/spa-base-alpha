@@ -1,9 +1,9 @@
 import { Channel } from 'spyne';
 import { AppTraits } from 'traits/app-traits.js';
 
-export class ChannelApp extends Channel {
+export class ChannelAppContext extends Channel {
   constructor(name, props = {}) {
-    name = 'CHANNEL_APP';
+    name = 'CHANNEL_APP_CONTEXT';
     props.sendCachedPayload = true;
     props.traits = [AppTraits];
     super(name, props);
@@ -14,7 +14,7 @@ export class ChannelApp extends Channel {
   }
 
   addRegisteredActions() {
-    return ['CHANNEL_APP_INIT_EVENT', 'CHANNEL_APP_DATA_EVENT'];
+    return ['CHANNEL_APP_CONTEXT_INIT_EVENT', 'CHANNEL_APP_CONTEXT_DATA_EVENT'];
   }
 
   onViewStreamInfo() {}
