@@ -29,6 +29,4 @@ export class PageTraits extends SpyneTrait {
     };
     this.props.data.content.forEach(addCard);
   }
-
-
 }

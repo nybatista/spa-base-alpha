@@ -20,7 +20,6 @@ const propsCard = {
   navLinks: navLinks,
 };
 
-
 describe('should test that breadrumb traits exists ', () => {
   it('should return hw from breadrumb traits', () => {
     const hw = BreadcrumbTraits.breadcrumb$HelloWorld();
@@ -200,4 +199,3 @@ describe('should test that breadrumb traits exists ', () => {
     );
   });
 });
-

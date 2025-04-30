@@ -16,5 +16,4 @@ export class NavTraits extends SpyneTrait {
   static navTraits$OnAppDataEvent(logoTxt = '') {
     this.props.el$('.branding h1 a').el.innerText = logoTxt;
   }
-
 }
