@@ -1,0 +1,89 @@
+$z-index-ui: 10000;
+
+$z-index-app-ui: 4500;
+$z-index-app-pages: 4000;
+$z-index-main-container: 5000;
+$z-index-generator-loading: 6000;
+
+$app-header-height: 50px;
+
+
+// ------------- Design Tokens (SCSS source of truth)
+$colors: (
+        brand: #5a7dff,
+        text:  #e6e6e6,
+        mute:  #9aa0a6,
+        bg:    #0f1115,
+        paper: #171a21,
+        ok:    #2ecc71,
+        warn:  #f1c40f,
+        err:   #e74c3c,
+);
+
+$font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+$spacing-scale: ( // 4px grid
+        0: 0,
+        1: .25rem, // 4
+        2: .5rem,  // 8
+        3: .75rem, // 12
+        4: 1rem,   // 16
+        5: 1.5rem, // 24
+        6: 2rem,   // 32
+        7: 3rem,   // 48
+        8: 4rem    // 64
+);
+
+$radius-scale: (
+        0: 0,
+        1: .125rem,
+        2: .25rem,
+        3: .5rem,
+        4: 1rem
+);
+
+$container-max: 72rem; // 1152px
+$container-pad: 1rem;
+
+// ------------- Emit CSS Custom Properties (brand-visible + themable)
+:root {
+  // colors
+  @each $k, $v in $colors {
+    --color-#{$k}: #{$v};
+  }
+  // typography
+  --font-sans: #{$font-sans};
+  --font-mono: #{$font-mono};
+
+  // spacing/radius scales
+  @each $k, $v in $spacing-scale {
+    --space-#{$k}: #{$v};
+  }
+  @each $k, $v in $radius-scale {
+    --radius-#{$k}: #{$v};
+  }
+
+  // layout
+  --container-max: #{$container-max};
+  --container-pad: #{$container-pad};
+
+  // base text
+  --text: var(--color-text);
+  --bg:   var(--color-bg);
+  --paper: var(--color-paper);
+  --brand: var(--color-brand);
+}
+
+// Optional dark theme hook (can also flip at :root for dark-first)
+[data-theme="dark"] {
+  // override only what changes; keep names stable
+  --color-text: #e8eaed;
+  --color-mute: #a3a7ad;
+  --color-bg:   #0b0d12;
+  --color-paper:#141821;
+}
+
+// ------------- Semantic aliases (keeps HTML classless if you wish)
+$shadow-1: 0 1px 2px rgba(0,0,0,.08), 0 2px 8px rgba(0,0,0,.06);
+$shadow-2: 0 4px 16px rgba(0,0,0,.12), 0 8px 24px rgba(0,0,0,.1);

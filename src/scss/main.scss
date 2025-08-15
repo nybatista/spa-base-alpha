@@ -1,6 +1,16 @@
 @use '01-vendors/normalize.css';
 @use '02-variables/mixins.scss';
 @use '02-variables/palette.scss' as palette;
+@use "02-variables/palette-vars";
+
+@use "02-variables/variables";  // tokens + global CSS vars
+@use "02-variables/base";       // reset + base type
+@use "02-variables/grid";       // layout primitives
+@use "02-variables/theme-semantic";
+
+// @use "forms";   // (optional): neutral form baseline later
+// @use "motion";  // (optional): reduced-motion + easing tokens
+
 @use '03-components/pages/pages.scss';
 @use '03-components/pages/page-404.scss';
 @use '03-components/cards/cards.scss';

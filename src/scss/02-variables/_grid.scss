@@ -1,0 +1,99 @@
+@use "variables" as _vars;
+@use "sass:map";
+@use "sass:math";
+
+// Responsive breakpoints
+$breakpoints: (
+        sm: 40rem,  // 640
+        md: 48rem,  // 768
+        lg: 64rem,  // 1024
+        xl: 80rem   // 1280
+);
+
+
+@mixin mq($bp) { @media (min-width: map.get($breakpoints, $bp)) { @content; } }
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-4);
+
+  @for $i from 1 through 12 {
+    > .col-#{$i} { grid-column: span #{$i} / span #{$i}; }
+    @each $bp, $size in $breakpoints {
+      > .#{$bp}\:col-#{$i} { @include mq($bp) { grid-column: span #{$i} / span #{$i}; } }
+    }
+  }
+}
+
+// Grid utilities use math.* instead of global min/max
+@function clamp-span($n) {
+  @return math.max(1, math.min(12, $n));
+}
+
+@mixin col-span($n) {
+  $n: clamp-span($n);
+  grid-column: span #{$n} / span #{$n};
+}
+
+
+// Container
+.container {
+  width: min(100% - (var(--container-pad) * 2), var(--container-max));
+  margin-inline: auto;
+}
+
+// Grid primitive
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-4); // 16px by default
+}
+
+$allowed-grids: 2, 3, 4, 6, 12;
+
+@mixin generate-grid-classes($list) {
+  @each $n in $list {
+    .grid-#{$n} {
+      display: grid;
+      grid-template-columns: repeat(#{$n}, 1fr);
+      gap: var(--space-4);
+    }
+  }
+}
+
+// Call it once in your utilities file
+@include generate-grid-classes($allowed-grids);
+
+
+// Gap utilities (class or mixin usage)
+@each $k, $v in _vars.$spacing-scale {
+  .gap-#{$k} { gap: var(--space-#{$k}); }
+}
+
+// Column span utility (works with 12-col)
+@function clamp-span($n) { @return max(1, min(12, $n)); }
+
+@mixin col-span($n) {
+  $n: clamp-span($n);
+  grid-column: span #{$n} / span #{$n};
+}
+
+// Example responsive span helpers (optional class utilities)
+@for $i from 1 through 12 {
+  .col-#{$i} { @include col-span($i); }
+  @each $bp, $size in $breakpoints {
+    .#{$bp}\:col-#{$i} { @include mq($bp) { @include col-span($i); } }
+  }
+}
+
+// Auto rows (card grids, etc.)
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+// Inline helpers
+.flex { display: flex; gap: var(--space-3); }
+.stack { display: grid; gap: var(--space-3); } // vertical rhythm without utility spam
