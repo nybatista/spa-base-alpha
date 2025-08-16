@@ -1,1 +1,276 @@
-{"text":{"header":"brand placeholder","footer":"© 2025 Your Company Name"},"uiProps":{"appTitle":"App ffTitle","header":" Logo","footer":"Company License","--selected-font":"Open Sans","--selected-palette":"08","fontFamilyStr":"\"Open Sans\", sans-serif;","fontFamilyLink":"Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800","paletteColorStr":"$Primary-050: #E6F6FF;$Primary-100: #BAE3FF;$Primary-200: #7CC4FA;$Primary-300: #47A3F3;$Primary-400: #2186EB;$Primary-500: #0967D2;$Primary-600: #0552B5;$Primary-700: #03449E;$Primary-800: #01337D;$Primary-900: #002159;$Neutral-050: #F5F7FA;$Neutral-100: #E4E7EB;$Neutral-200: #CBD2D9;$Neutral-300: #9AA5B1;$Neutral-400: #7B8794;$Neutral-500: #616E7C;$Neutral-600: #52606D;$Neutral-700: #3E4C59;$Neutral-800: #323F4B;$Neutral-900: #1F2933;$Supporting-1-050: #E1FCF8;$Supporting-1-100: #C1FEF6;$Supporting-1-200: #92FDF2;$Supporting-1-300: #62F4EB;$Supporting-1-400: #3AE7E1;$Supporting-1-500: #1CD4D4;$Supporting-1-600: #0FB5BA;$Supporting-1-700: #099AA4;$Supporting-1-800: #07818F;$Supporting-1-900: #05606E;$Supporting-2-050: #FFE8D9;$Supporting-2-100: #FFD0B5;$Supporting-2-200: #FFB088;$Supporting-2-300: #FF9466;$Supporting-2-400: #F9703E;$Supporting-2-500: #F35627;$Supporting-2-600: #DE3A11;$Supporting-2-700: #C52707;$Supporting-2-800: #AD1D07;$Supporting-2-900: #841003;$Supporting-3-050: #FFE3E3;$Supporting-3-100: #FFBDBD;$Supporting-3-200: #FF9B9B;$Supporting-3-300: #F86A6A;$Supporting-3-400: #EF4E4E;$Supporting-3-500: #E12D39;$Supporting-3-600: #CF1124;$Supporting-3-700: #AB091E;$Supporting-3-800: #8A041A;$Supporting-3-900: #610316;$Supporting-4-050: #FFFBEA;$Supporting-4-100: #FFF3C4;$Supporting-4-200: #FCE588;$Supporting-4-300: #FADB5F;$Supporting-4-400: #F7C948;$Supporting-4-500: #F0B429;$Supporting-4-600: #DE911D;$Supporting-4-700: #CB6E17;$Supporting-4-800: #B44D12;$Supporting-4-900: #8D2B0B;"},"content":[{"pageId":"home","isGpt4ImgSearch":true,"title":"Welcome to Our Modern Workspace","desc":"Explore innovative our solutions for your business needs.","img":{"type":"landing","id":3685203,"width":4160,"height":6240,"url":"https://www.pexels.com/photo/white-concrete-building-3685203/","photographer":"Mitchell Luo","photographer_url":"https://www.pexels.com/@mitchel3uo","photographer_id":2017002,"avg_color":"#B5B7C8","src":{"original":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg","large2x":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"liked":false,"alt":"Sleek and modern white interior design captured in Melbourne, Australia.","types":["landing"],"pageCategory":["landing"],"pageEntityLoc":["any","office"],"imgUrl":"https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},"calloutTitle":"Don’t Miss Out on home","calloutDesc":"Discover how home can benefit you. Take advantage of our exclusive resources and offers!","lorem":["Lorem paragraph #1 about home..."]},{"pageId":"about","cardId":"","isGpt4ImgSearch":true,"title":"About Us","desc":"Discover our mission to redefine collaboration in the workplace.","img":{"alt":"Group Of People Using Laptops","id":1560932,"imgUrl":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","type":"about","types":["about us","about","contact-us","about me","our story","team","our-team","our team","careers"],"width":5032,"height":3355,"pageCategory":["about"],"pageEntityLoc":["office","any"],"url":"https://www.pexels.com/photo/group-of-people-using-laptops-1560932/","photographer":"Daria Shevtsova","photographer_url":"https://www.pexels.com/@daria","photographer_id":220024,"src":{"original":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg","large2x":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"score":2},"calloutTitle":"Don’t Miss Out on about","calloutDesc":"Discover info about us. Take advantage of our exclusive resources and offers!","lorem":["Lorem paragraph #1 about about..."],"content":[{"pageId":"about","cardId":"contact-us","title":"Contact Us","desc":"Get in touch with our team to start a conversation.","calloutTitle":"Reach Out Today","calloutDesc":"Let's discuss how we can help your business thrive.","placeholderArticle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.","img":{"alt":"Group of People Watching on Laptop","id":1595385,"imgUrl":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","type":"about","types":["about us","about","contact-us","about me","our story","team","our-team","our team","careers"],"width":3000,"height":2000,"pageCategory":["about"],"pageEntityLoc":["office","any"],"url":"https://www.pexels.com/photo/group-of-people-watching-on-laptop-1595385/","photographer":"Fox","photographer_url":"https://www.pexels.com/@hillaryfox","photographer_id":571159,"src":{"original":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg","large2x":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"score":3},"lorem":["Lorem paragraph #1 about contact-us..."]}]}]}
+{
+  "text": {
+    "header": "brand placeholder",
+    "footer": "© 2025 Your Company Name"
+  },
+  "uiProps": {
+    "appTitle": "App ffTitle",
+    "header": " Logo",
+    "footer": "Company License",
+    "--selected-font": "Open Sans",
+    "--selected-palette": "08",
+    "fontFamilyStr": "\"Open Sans\", sans-serif;",
+    "fontFamilyLink": "Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800",
+    "paletteColorStr": "$Primary-050: #E6F6FF;$Primary-100: #BAE3FF;$Primary-200: #7CC4FA;$Primary-300: #47A3F3;$Primary-400: #2186EB;$Primary-500: #0967D2;$Primary-600: #0552B5;$Primary-700: #03449E;$Primary-800: #01337D;$Primary-900: #002159;$Neutral-050: #F5F7FA;$Neutral-100: #E4E7EB;$Neutral-200: #CBD2D9;$Neutral-300: #9AA5B1;$Neutral-400: #7B8794;$Neutral-500: #616E7C;$Neutral-600: #52606D;$Neutral-700: #3E4C59;$Neutral-800: #323F4B;$Neutral-900: #1F2933;$Supporting-1-050: #E1FCF8;$Supporting-1-100: #C1FEF6;$Supporting-1-200: #92FDF2;$Supporting-1-300: #62F4EB;$Supporting-1-400: #3AE7E1;$Supporting-1-500: #1CD4D4;$Supporting-1-600: #0FB5BA;$Supporting-1-700: #099AA4;$Supporting-1-800: #07818F;$Supporting-1-900: #05606E;$Supporting-2-050: #FFE8D9;$Supporting-2-100: #FFD0B5;$Supporting-2-200: #FFB088;$Supporting-2-300: #FF9466;$Supporting-2-400: #F9703E;$Supporting-2-500: #F35627;$Supporting-2-600: #DE3A11;$Supporting-2-700: #C52707;$Supporting-2-800: #AD1D07;$Supporting-2-900: #841003;$Supporting-3-050: #FFE3E3;$Supporting-3-100: #FFBDBD;$Supporting-3-200: #FF9B9B;$Supporting-3-300: #F86A6A;$Supporting-3-400: #EF4E4E;$Supporting-3-500: #E12D39;$Supporting-3-600: #CF1124;$Supporting-3-700: #AB091E;$Supporting-3-800: #8A041A;$Supporting-3-900: #610316;$Supporting-4-050: #FFFBEA;$Supporting-4-100: #FFF3C4;$Supporting-4-200: #FCE588;$Supporting-4-300: #FADB5F;$Supporting-4-400: #F7C948;$Supporting-4-500: #F0B429;$Supporting-4-600: #DE911D;$Supporting-4-700: #CB6E17;$Supporting-4-800: #B44D12;$Supporting-4-900: #8D2B0B;"
+  },
+  "content": [
+    {
+      "pageId": "home",
+      "isGpt4ImgSearch": true,
+      "title": "Welcome to Our Modern Workspace",
+      "desc": "Explore innovative our solutions for your business needs.",
+      "img": {
+        "type": "landing",
+        "id": 3685203,
+        "width": 4160,
+        "height": 6240,
+        "url": "https://www.pexels.com/photo/white-concrete-building-3685203/",
+        "photographer": "Mitchell Luo",
+        "photographer_url": "https://www.pexels.com/@mitchel3uo",
+        "photographer_id": 2017002,
+        "avg_color": "#B5B7C8",
+        "src": {
+          "original": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg",
+          "large2x": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "liked": false,
+        "alt": "Sleek and modern white interior design captured in Melbourne, Australia.",
+        "types": [
+          "landing"
+        ],
+        "pageCategory": [
+          "landing"
+        ],
+        "pageEntityLoc": [
+          "any",
+          "office"
+        ],
+        "imgUrl": "https://images.pexels.com/photos/3685203/pexels-photo-3685203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      "calloutTitle": "Don’t Miss Out on home",
+      "calloutDesc": "Discover how home can benefit you. Take advantage of our exclusive resources and offers!",
+      "lorem": [
+        "Lorem paragraph #1 about home..."
+      ]
+    },
+    {
+      "pageId": "documentation",
+      "title": "Comprehensive Technical Documentation",
+      "desc": "Access extensive technical resources, including code samples and API references, designed for developers.",
+      "calloutTitle": "Get Started with Our Docs",
+      "calloutDesc": "Dive into our documentation to enhance your development experience.",
+      "placeholderArticle": "In the realm of software development, comprehensive documentation is crucial. It not only serves as a guide for users but also helps in maintaining the codebase effectively. Our technical documentation covers various aspects, ensuring that you have the resources you need at your fingertips. From API references to code samples, we've designed our documents to be user-friendly and easy to navigate. Whether you're a seasoned developer or just starting, you'll find valuable insights within our documentation.",
+      "img": {
+        "id": 4491829,
+        "width": 7360,
+        "height": 4912,
+        "url": "https://www.pexels.com/photo/text-4491829/",
+        "photographer": "Ivan Samkov",
+        "photographer_url": "https://www.pexels.com/@ivan-samkov",
+        "photographer_id": 2563618,
+        "avg_color": "#5D92B2",
+        "src": {
+          "original": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg",
+          "large2x": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/4491829/pexels-photo-4491829.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "liked": false,
+        "alt": "Close-up view of architectural blueprint with technical drawings."
+      },
+      "lorem": [
+        "Lorem paragraph #1 about documentation..."
+      ],
+      "content": [
+        {
+          "pageId": "documentation",
+          "cardId": "docs",
+          "title": "Explore Our Documentation Resources",
+          "desc": "Delve into our detailed documentation, tailored for developers seeking best practices and insights.",
+          "placeholderArticle": "In today's fast-paced tech environment, staying informed is vital for developers. Our documentation resources provide an extensive overview of various technologies, offering essential insights for effective coding. With clear explanations and practical examples, you can enhance your skills and knowledge. Whether you need to troubleshoot an issue or want to learn about a new framework, our resources are designed to support your journey in software development.",
+          "img": {
+            "id": 8113506,
+            "width": 4000,
+            "height": 6000,
+            "url": "https://www.pexels.com/photo/a-person-reading-instruction-on-the-board-8113506/",
+            "photographer": "Annushka  Ahuja",
+            "photographer_url": "https://www.pexels.com/@annushka-ahuja",
+            "photographer_id": 48864553,
+            "avg_color": "#747881",
+            "src": {
+              "original": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg",
+              "large2x": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/8113506/pexels-photo-8113506.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "liked": false,
+            "alt": "An individual points to a chart on film development. Perfect for educational or instructional themes."
+          },
+          "calloutTitle": "Don’t Miss Out on docs",
+          "calloutDesc": "Discover how docs can benefit you. Take advantage of our exclusive resources and offers!",
+          "lorem": [
+            "Lorem paragraph #1 about docs...",
+            "Lorem paragraph #2 about docs..."
+          ]
+        },
+        {
+          "pageId": "documentation",
+          "cardId": "reference",
+          "title": "Reference Material for Developers",
+          "desc": "Find essential reference materials that provide quick access to coding standards and practices.",
+          "placeholderArticle": "Every developer knows that having a solid reference guide can make or break your coding experience. Our reference materials are curated to provide you with quick access to essential coding standards and best practices. This ensures that you maintain quality in your projects while following industry standards. With our resources, you can streamline your coding process, reduce errors, and enhance productivity.",
+          "img": {
+            "id": 9242845,
+            "width": 4000,
+            "height": 2667,
+            "url": "https://www.pexels.com/photo/woman-in-black-shirt-wearing-protective-goggles-holding-black-and-green-screw-driver-9242845/",
+            "photographer": "Mikhail Nilov",
+            "photographer_url": "https://www.pexels.com/@mikhail-nilov",
+            "photographer_id": 11437196,
+            "avg_color": "#373936",
+            "src": {
+              "original": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg",
+              "large2x": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/9242845/pexels-photo-9242845.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "liked": false,
+            "alt": "Two students working together on building a robot in an industrial setting, wearing protective goggles."
+          },
+          "calloutTitle": "Don’t Miss Out on reference",
+          "calloutDesc": "Discover how reference can benefit you. Take advantage of our exclusive resources and offers!",
+          "lorem": [
+            "Lorem paragraph #1 about reference...",
+            "Lorem paragraph #2 about reference..."
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "about",
+      "cardId": "",
+      "isGpt4ImgSearch": true,
+      "title": "About Us",
+      "desc": "Discover our mission to redefine collaboration in the workplace.",
+      "img": {
+        "alt": "Group Of People Using Laptops",
+        "id": 1560932,
+        "imgUrl": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "type": "about",
+        "types": [
+          "about us",
+          "about",
+          "contact-us",
+          "about me",
+          "our story",
+          "team",
+          "our-team",
+          "our team",
+          "careers"
+        ],
+        "width": 5032,
+        "height": 3355,
+        "pageCategory": [
+          "about"
+        ],
+        "pageEntityLoc": [
+          "office",
+          "any"
+        ],
+        "url": "https://www.pexels.com/photo/group-of-people-using-laptops-1560932/",
+        "photographer": "Daria Shevtsova",
+        "photographer_url": "https://www.pexels.com/@daria",
+        "photographer_id": 220024,
+        "src": {
+          "original": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg",
+          "large2x": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "large": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "medium": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "small": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&h=130",
+          "portrait": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+          "landscape": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+          "tiny": "https://images.pexels.com/photos/1560932/pexels-photo-1560932.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        "score": 2
+      },
+      "calloutTitle": "Don’t Miss Out on about",
+      "calloutDesc": "Discover info about us. Take advantage of our exclusive resources and offers!",
+      "lorem": [
+        "Lorem paragraph #1 about about..."
+      ],
+      "content": [
+        {
+          "pageId": "about",
+          "cardId": "contact-us",
+          "title": "Contact Us",
+          "desc": "Get in touch with our team to start a conversation.",
+          "calloutTitle": "Reach Out Today",
+          "calloutDesc": "Let's discuss how we can help your business thrive.",
+          "placeholderArticle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "img": {
+            "alt": "Group of People Watching on Laptop",
+            "id": 1595385,
+            "imgUrl": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "type": "about",
+            "types": [
+              "about us",
+              "about",
+              "contact-us",
+              "about me",
+              "our story",
+              "team",
+              "our-team",
+              "our team",
+              "careers"
+            ],
+            "width": 3000,
+            "height": 2000,
+            "pageCategory": [
+              "about"
+            ],
+            "pageEntityLoc": [
+              "office",
+              "any"
+            ],
+            "url": "https://www.pexels.com/photo/group-of-people-watching-on-laptop-1595385/",
+            "photographer": "Fox",
+            "photographer_url": "https://www.pexels.com/@hillaryfox",
+            "photographer_id": 571159,
+            "src": {
+              "original": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg",
+              "large2x": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "score": 3
+          },
+          "lorem": [
+            "Lorem paragraph #1 about contact-us..."
+          ]
+        }
+      ]
+    }
+  ]
+}

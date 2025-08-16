@@ -29,6 +29,12 @@ const config = {
         routePath: {
           routeName: 'pageId',
           home: '',
+          "documentation": {
+            routePath: {
+              routeName: 'cardId',
+              "docs":"docs",
+              "reference":"reference"}
+          },
           about: {
             routePath: {
               routeName: 'cardId',

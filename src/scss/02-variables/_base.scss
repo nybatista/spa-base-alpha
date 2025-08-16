@@ -33,7 +33,7 @@ body {
 .p  { font-size: var(--fs-2); color: var(--text); }
 
 /* Card shell (brand-neutral) */
-.card1 {
+.card {
   background: var(--paper);
   border-radius: var(--radius-3);
   box-shadow: #{_vars.$shadow-1};

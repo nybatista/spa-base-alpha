@@ -1,3 +1,4 @@
+// _grid.scss
 @use "sass:map";
 @use "sass:math";
 @use "variables" as _vars;
@@ -24,13 +25,6 @@ $breakpoints: (
   margin-inline: auto;
 }
 
-.grid-12 {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--space-4);
-}
-
-// Optional quick grids (intentionally limited set)
 $allowed-grids: 2, 3, 4, 6, 12;
 
 @mixin generate-grid-classes($list) {
@@ -44,8 +38,16 @@ $allowed-grids: 2, 3, 4, 6, 12;
 }
 @include generate-grid-classes($allowed-grids);
 
+// Convenience aliases
+.grid       { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-4); }
+.grid-12    { display: grid; grid-template-columns: repeat(12, 1fr);            gap: var(--space-4); }
+.grid-auto  { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: var(--space-4); }
+
+.flex  { display: flex; gap: var(--space-3); }
+.stack { display: grid; gap: var(--space-3); } // vertical rhythm helper
+
 // ----------------------------
-// Gaps
+// Gaps (use spacing scale from variables)
 // ----------------------------
 @each $k, $v in _vars.$spacing-scale {
   .gap-#{$k} { gap: var(--space-#{$k}); }
@@ -54,37 +56,59 @@ $allowed-grids: 2, 3, 4, 6, 12;
 // ----------------------------
 // Column spans (12-col system)
 // ----------------------------
-@function clamp-span($n) { @return math.max(1, math.min(12, $n)); }
+@function clamp12($n) { @return math.max(1, math.min(12, $n)); }
 @mixin col-span($n) {
-  $n: clamp-span($n);
+  $n: clamp12($n);
   grid-column: span #{$n} / span #{$n};
 }
 
-/* Base spans apply ONLY inside .grid-12 (but with zero specificity) */
-// keep base only inside the grid container (0 specificity because of :where)
+/* Base spans apply ONLY inside .grid-12 (zero specificity via :where) */
 :where(.grid-12) {
   @for $i from 1 through 12 {
     > .col-#{$i} { @include col-span($i); }
   }
 }
 
-// responsive utilities (0-0-1) always win over the :where base
+/* Responsive overrides */
 @for $i from 1 through 12 {
   @each $bp, $size in $breakpoints {
-    .#{$bp}\:col-#{$i} {
-      @include mq($bp) { @include col-span($i); }
-    }
+    .#{$bp}\:col-#{$i} { @include mq($bp) { @include col-span($i); } }
   }
 }
 
 // ----------------------------
-// Auto grid + helpers
+// Row spans
 // ----------------------------
-.grid-auto {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: var(--space-4);
+@mixin row-span($n) {
+  $n: clamp12($n);
+  grid-row: span #{$n} / span #{$n};
 }
 
-.flex { display: flex; gap: var(--space-3); }
-.stack { display: grid; gap: var(--space-3); } // vertical rhythm
+/* Base row spans only inside .grid-12 */
+:where(.grid-12) {
+  @for $i from 1 through 12 {
+    > .row-#{$i} { @include row-span($i); }
+  }
+}
+
+/* Responsive row spans */
+@for $i from 1 through 12 {
+  @each $bp, $size in $breakpoints {
+    .#{$bp}\:row-#{$i} { @include mq($bp) { @include row-span($i); } }
+  }
+}
+
+// ----------------------------
+// Order (works for grid *and* flex)
+// ----------------------------
+:where(.grid-12, .flex) {
+  @for $i from 0 through 12 {
+    > .order-#{$i} { order: #{$i}; }
+  }
+}
+
+@for $i from 0 through 12 {
+  @each $bp, $size in $breakpoints {
+    .#{$bp}\:order-#{$i} { @include mq($bp) { order: #{$i}; } }
+  }
+}
