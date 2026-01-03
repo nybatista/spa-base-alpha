@@ -8,6 +8,7 @@
     "start": "webpack serve --open",
     "build": "webpack --mode production --env build",
     "build:apache": "buildType=apache webpack --mode production --env build",
+    "preview" : "npx serve dist",
     "lint": "eslint --config eslint.config.js",
     "lint:fix": "eslint --config eslint.config.js --fix",
     "format": "prettier --write 'src/**/*.{js,css,scss,html}'"
